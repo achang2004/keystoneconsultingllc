@@ -75,9 +75,9 @@ a { color: inherit; }
 
 .label {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 14px;
