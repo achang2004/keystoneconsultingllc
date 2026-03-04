@@ -1321,9 +1321,18 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;
   gap: 48px;
 }
-.footer-brand .nav-logo { display: inline-flex; margin-bottom: 14px; }
-.footer-brand .nav-logo-img { height: 32px; }
-.footer-brand p { font-size: 0.84rem; line-height: 1.75; max-width: 280px; }
+.footer-brand .nav-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+  height: auto;
+  padding: 0;
+}
+.footer-brand .nav-logo-img {
+  height: 72px;
+  width: auto;
+  max-width: 260px;
+}
+.footer-brand p { font-size: 0.84rem; line-height: 1.75; max-width: 300px; }
 .footer-col h4 { font-family: var(--serif); color: var(--white); margin-bottom: 16px; font-size: 1rem; }
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .footer-col ul a { color: rgba(255, 255, 255, 0.5); text-decoration: none; font-size: 0.85rem; transition: color var(--ease); }
