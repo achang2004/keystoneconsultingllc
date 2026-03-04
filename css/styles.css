@@ -515,6 +515,8 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   transition: background var(--ease);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .service-item::before {
   content: '';
@@ -538,7 +540,8 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
 .service-item p  { color: rgba(255, 255, 255, 0.55); font-size: 0.88rem; line-height: 1.7; }
 .service-item .service-link {
   display: inline-block;
-  margin-top: 14px;
+  margin-top: auto;
+  padding-top: 20px;
   font-size: 0.82rem;
   color: var(--gold);
   text-decoration: none;
