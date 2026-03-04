@@ -21,7 +21,6 @@ function buildNav() {
       <li><a href="${BASE}pages/services.html"                  data-i18n="nav.services">Services</a></li>
       <li><a href="${BASE}pages/about.html"                     data-i18n="nav.about">About</a></li>
       <li><a href="${BASE}pages/success-stories.html"           data-i18n="nav.success">Success Stories</a></li>
-      <li><a href="${BASE}pages/blog.html"                      data-i18n="nav.blog">Blog</a></li>
       <li><a href="${BASE}pages/contact.html"                   data-i18n="nav.contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
@@ -41,7 +40,6 @@ function buildNav() {
     <li><a href="${BASE}pages/services.html"               data-i18n="nav.services">Services</a></li>
     <li><a href="${BASE}pages/about.html"                  data-i18n="nav.about">About</a></li>
     <li><a href="${BASE}pages/success-stories.html"        data-i18n="nav.success">Success Stories</a></li>
-    <li><a href="${BASE}pages/blog.html"                   data-i18n="nav.blog">Blog</a></li>
     <li><a href="${BASE}pages/contact.html"                data-i18n="nav.contact">Contact</a></li>
   </ul>
   <div class="mobile-menu-footer">

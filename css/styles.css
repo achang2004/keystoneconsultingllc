@@ -691,6 +691,54 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
 /* Section--cream step circles get white bg */
 .section--cream .step-circle { background: var(--cream-dk); }
 
+/* ── AI DIFFERENTIATION ───────────────────────────────────── */
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+.ai-card {
+  background: var(--white);
+  border-radius: var(--r-md);
+  padding: 36px 28px;
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--gold);
+  transition: transform var(--ease), box-shadow var(--ease);
+}
+.ai-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.ai-card-icon {
+  width: 52px; height: 52px;
+  background: var(--navy);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+.ai-card-icon svg { width: 24px; height: 24px; }
+.ai-card h3 { font-size: 1.1rem; margin-bottom: 12px; color: var(--navy); }
+.ai-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.75; }
+.ai-question {
+  margin-top: 48px;
+  padding: 32px 40px;
+  background: var(--navy);
+  border-radius: var(--r-md);
+  border-left: 4px solid var(--gold);
+  text-align: center;
+}
+.ai-question p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+  max-width: 760px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .ai-grid { grid-template-columns: 1fr; }
+  .ai-question { padding: 24px 20px; }
+}
+
 /* ── FOUNDER / ABOUT BIO ──────────────────────────────────── */
 .founder-inner {
   display: grid;
