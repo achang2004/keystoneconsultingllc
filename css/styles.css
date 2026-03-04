@@ -836,7 +836,124 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
 .t-stars  { color: var(--gold); font-size: 0.85rem; margin-bottom: 12px; }
 .t-body   { font-size: 0.93rem; color: var(--muted); line-height: 1.8; margin-bottom: 24px; font-style: italic; }
 .t-author { font-weight: 700; color: var(--navy); font-size: 0.85rem; }
-.t-school { color: var(--gold); font-size: 0.8rem; margin-top: 2px; }
+.t-meta   { color: var(--gold); font-size: 0.78rem; margin-top: 4px; letter-spacing: 0.03em; }
+
+/* ── CASE STUDIES ─────────────────────────────────────────── */
+.section--cream { background: var(--cream); }
+.section-sub {
+  max-width: 600px; margin: 14px auto 0;
+  color: var(--muted); font-size: 0.95rem; line-height: 1.75;
+}
+.btn-outline-navy {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 2px solid var(--navy);
+  border-radius: var(--r-pill);
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background var(--ease), color var(--ease);
+}
+.btn-outline-navy:hover { background: var(--navy); color: var(--white); }
+.case-card {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-top: 48px;
+}
+.case-header {
+  background: var(--navy);
+  padding: 24px 36px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.case-admitted-label {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.45); display: block; margin-bottom: 4px;
+}
+.case-admitted-school {
+  font-size: 1.2rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em;
+}
+.case-tag {
+  background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--gold-lt);
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+  padding: 5px 14px; border-radius: var(--r-pill);
+}
+.case-body {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+}
+.case-col {
+  padding: 36px;
+}
+.case-col:first-child {
+  border-right: 1px solid var(--cream-dk);
+}
+.case-section-title {
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--muted); margin-bottom: 18px; font-weight: 700;
+}
+.case-profile-list {
+  list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;
+}
+.case-profile-list li {
+  display: flex; gap: 12px; font-size: 0.88rem;
+}
+.case-key { color: var(--muted); min-width: 110px; flex-shrink: 0; }
+.case-val { color: var(--text); font-weight: 500; }
+.case-challenge {
+  background: rgba(201,168,76,0.07);
+  border-left: 3px solid var(--gold);
+  padding: 14px 16px;
+  font-size: 0.85rem; color: var(--muted); line-height: 1.75;
+  border-radius: 0 var(--r) var(--r) 0;
+}
+.case-challenge strong { color: var(--navy); }
+.case-actions {
+  list-style: none; display: flex; flex-direction: column; gap: 20px;
+}
+.case-actions li {
+  display: flex; gap: 14px; align-items: flex-start; font-size: 0.88rem; color: var(--muted); line-height: 1.75;
+}
+.case-actions li strong { color: var(--text); }
+.case-actions li em { color: var(--gold); font-style: normal; font-weight: 600; }
+.case-action-icon {
+  min-width: 28px; height: 28px;
+  background: var(--navy); color: var(--gold);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+  flex-shrink: 0; margin-top: 2px;
+}
+.case-result {
+  background: var(--navy);
+  padding: 28px 36px;
+  border-top: 1px solid rgba(201,168,76,0.15);
+}
+.case-result-inner {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 10px;
+}
+.case-result-label {
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: var(--r-pill);
+}
+.case-result-text {
+  color: var(--white); font-weight: 600; font-size: 0.95rem;
+}
+.case-result-note {
+  color: rgba(255,255,255,0.55); font-size: 0.83rem; line-height: 1.75;
+}
+@media (max-width: 720px) {
+  .case-body { grid-template-columns: 1fr; }
+  .case-col:first-child { border-right: none; border-bottom: 1px solid var(--cream-dk); }
+  .case-header { padding: 20px 24px; }
+  .case-col { padding: 28px 24px; }
+  .case-result { padding: 22px 24px; }
+}
 
 /* Success story filter + grid */
 .filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
