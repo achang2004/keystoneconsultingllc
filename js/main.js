@@ -15,7 +15,7 @@ function buildNav() {
   return `
 <nav id="main-nav">
   <div class="container nav-inner">
-    <a href="${BASE}index.html" class="nav-logo" data-i18n-html="nav.logo">Keystone <span>Consulting</span></a>
+    <a href="${BASE}index.html" class="nav-logo"><img src="${BASE}assets/logos/keystone.svg" alt="Keystone Consulting LLC" class="nav-logo-img"></a>
     <ul class="nav-links" role="list">
       <li><a href="${BASE}index.html"                           data-i18n="nav.home">Home</a></li>
       <li><a href="${BASE}pages/services.html"                  data-i18n="nav.services">Services</a></li>
@@ -60,7 +60,7 @@ function buildFooter() {
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="${BASE}index.html" class="nav-logo" data-i18n-html="nav.logo">Keystone <span>Consulting</span> LLC</a>
+        <a href="${BASE}index.html" class="nav-logo"><img src="${BASE}assets/logos/keystone.svg" alt="Keystone Consulting LLC" class="nav-logo-img"></a>
         <p data-i18n="footer.tagline">Helping students from China and around the world gain admission to their dream U.S. universities since 2008. 100% success rate. Bilingual support.</p>
       </div>
       <div class="footer-col">
