@@ -34,6 +34,7 @@ const TRANSLATIONS = {
       stat3_num:    '500+',
       stat3_label:  'Students Advised',
       schools_label:'Students placed at',
+      industry_label:'Our advisors have worked at',
 
       why_label:    'Why Families Choose Us',
       why_h2:       'An Advisor You Can <span class="gold">Trust</span>',
@@ -471,6 +472,7 @@ const TRANSLATIONS = {
       stat3_num:    '500+',
       stat3_label:  '辅导学生数',
       schools_label:'学生已录取院校',
+      industry_label:'顾问团队曾就职于',
 
       why_label:    '为什么选择我们',
       why_h2:       '值得信赖的<span class="gold">升学顾问</span>',

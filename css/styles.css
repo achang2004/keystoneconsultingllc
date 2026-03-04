@@ -388,10 +388,10 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   background: var(--navy-mid);
   border-top: 1px solid rgba(201, 168, 76, 0.15);
   border-bottom: 1px solid rgba(201, 168, 76, 0.15);
-  padding: 20px 0;
+  padding: 24px 0;
 }
 .schools-inner {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  display: flex; align-items: center; gap: 28px; flex-wrap: wrap;
   justify-content: center;
   overflow: visible;
 }
@@ -401,16 +401,55 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
-  margin-right: 8px;
+  margin-right: 4px;
+  white-space: nowrap;
 }
-.school-tag {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 4px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--r-pill);
-  font-style: italic;
-  font-family: var(--serif);
+/* All logos share the same height; width scales naturally */
+.school-logo {
+  height: 28px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  /* Invert to white, then fade to ~55% opacity to blend on navy */
+  filter: brightness(0) invert(1) opacity(0.55);
+  transition: filter 0.2s ease;
+}
+.school-logo:hover {
+  filter: brightness(0) invert(1) opacity(0.85);
+}
+/* MIT and Yale are portrait-ish — cap shorter, allow more height */
+.school-logo--square {
+  height: 34px;
+  max-width: 70px;
+}
+/* Stanford, Brown — extra wide wordmarks */
+.school-logo--wide {
+  max-width: 130px;
+}
+/* Carnegie Mellon — extremely wide wordmark */
+.school-logo--xwide {
+  max-width: 160px;
+}
+@media (max-width: 640px) {
+  .schools-inner { gap: 20px; }
+  .school-logo { height: 22px; max-width: 85px; }
+  .school-logo--square { height: 28px; max-width: 55px; }
+  .school-logo--wide { max-width: 100px; }
+  .school-logo--xwide { max-width: 120px; }
+}
+
+/* ── INDUSTRY ADVISORS STRIP ──────────────────────────────── */
+.industry-strip {
+  background: var(--cream);
+  border-bottom: 1px solid rgba(11, 31, 58, 0.08);
+  padding: 22px 0;
+}
+/* Industry logos: dark originals, no invert — just reduce opacity */
+.industry-strip .school-logo {
+  filter: opacity(0.55) grayscale(0.2);
+}
+.industry-strip .school-logo:hover {
+  filter: opacity(0.9) grayscale(0);
 }
 
 /* ── WHY US CARDS ─────────────────────────────────────────── */
@@ -429,7 +468,17 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   transition: transform var(--ease), box-shadow var(--ease);
 }
 .why-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
-.why-icon { font-size: 2rem; margin-bottom: 16px; }
+.why-icon {
+  width: 52px; height: 52px;
+  background: var(--navy);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.why-icon svg {
+  width: 26px; height: 26px;
+  fill: var(--gold);
+}
 .why-card h3 { margin-bottom: 10px; color: var(--navy); }
 .why-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
 
@@ -623,7 +672,17 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   border: 1px solid rgba(201, 168, 76, 0.25);
   position: relative; overflow: hidden;
 }
-.founder-portrait-inner { font-size: 6rem; opacity: 0.25; }
+.founder-portrait-inner {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.12);
+  border: 2px solid rgba(201, 168, 76, 0.3);
+  display: flex; align-items: center; justify-content: center;
+}
+.founder-portrait-inner svg {
+  width: 64px; height: 64px;
+  fill: rgba(201, 168, 76, 0.5);
+}
 .founder-portrait-badge {
   position: absolute; bottom: 0; left: 0; right: 0;
   background: var(--gold);
@@ -914,8 +973,14 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
 }
 .contact-method-card .c-icon {
   width: 56px; height: 56px; border-radius: 50%;
-  font-size: 1.5rem;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
   margin: 0 auto 16px;
+}
+.contact-method-card .c-icon svg {
+  width: 26px; height: 26px;
+  color: var(--gold);
+  fill: var(--gold);
 }
 .contact-method-card h3 { color: var(--navy); margin-bottom: 8px; font-size: 1.05rem; }
 .contact-method-card p  { color: var(--muted); font-size: 0.88rem; }
@@ -969,12 +1034,14 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   display: flex; gap: 16px; align-items: center;
 }
 .wechat-qr {
-  width: 70px; height: 70px; background: var(--white);
-  border-radius: 6px;
+  width: 60px; height: 60px; background: #07C160;
+  border-radius: 12px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 2.5rem;
-  border: 1px solid #dde2e8;
   flex-shrink: 0;
+}
+.wechat-qr svg {
+  width: 34px; height: 34px;
+  fill: #fff;
 }
 .wechat-text { font-size: 0.85rem; color: var(--muted); }
 .wechat-text strong { display: block; color: var(--text); font-size: 0.95rem; margin-bottom: 2px; }
@@ -1010,9 +1077,18 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   height: 160px;
   background: linear-gradient(135deg, var(--navy-soft), var(--navy));
   display: flex; align-items: center; justify-content: center;
-  font-size: 3rem;
-  opacity: 0.7;
 }
+.blog-card-img svg {
+  width: 52px; height: 52px;
+  fill: rgba(201, 168, 76, 0.6);
+}
+/* Per-category tint overlays */
+.blog-card-img--tips     { background: linear-gradient(135deg, #0b2040, #14305a); }
+.blog-card-img--strategy { background: linear-gradient(135deg, #1a1040, #2d1a6e); }
+.blog-card-img--test     { background: linear-gradient(135deg, #0b3030, #0d4a3a); }
+.blog-card-img--list     { background: linear-gradient(135deg, #1a0b28, #3d1560); }
+.blog-card-img--research { background: linear-gradient(135deg, #0b2030, #0d3050); }
+.blog-card-img--essay    { background: linear-gradient(135deg, #2a1408, #5a2c10); }
 .blog-card-body { padding: 28px 24px; }
 .blog-category {
   display: inline-block;
