@@ -34,7 +34,9 @@ const TRANSLATIONS = {
       stat3_num:    '500+',
       stat3_label:  'Students Advised',
       schools_label:'Students placed at',
-      industry_label:'Our advisors have worked at',
+      industry_label:'Our Advisors Come From',
+      industry_h2:   'Industry <span class="gold">Leaders</span>',
+      industry_sub:  'Our advisory network includes professionals from the world\'s most prestigious technology, finance, and research institutions — bringing real-world insight to every student\'s application.',
 
       why_label:    'Why Families Choose Us',
       why_h2:       'An Advisor You Can <span class="gold">Trust</span>',
@@ -472,7 +474,9 @@ const TRANSLATIONS = {
       stat3_num:    '500+',
       stat3_label:  '辅导学生数',
       schools_label:'学生已录取院校',
-      industry_label:'顾问团队曾就职于',
+      industry_label:'顾问团队背景',
+      industry_h2:   '行业<span class="gold">精英</span>顾问',
+      industry_sub:  '我们的顾问网络汇聚了来自全球顶尖科技、金融与科研机构的专业人士，以真实的职业视角为每位学生的申请提供独特洞见。',
 
       why_label:    '为什么选择我们',
       why_h2:       '值得信赖的<span class="gold">升学顾问</span>',

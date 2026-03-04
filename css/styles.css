@@ -438,18 +438,49 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   .school-logo--xwide { max-width: 120px; }
 }
 
-/* ── INDUSTRY ADVISORS STRIP ──────────────────────────────── */
-.industry-strip {
+/* ── INDUSTRY ADVISORS SECTION ────────────────────────────── */
+.industry-section {
   background: var(--cream);
-  border-bottom: 1px solid rgba(11, 31, 58, 0.08);
-  padding: 22px 0;
+  border-top: 1px solid rgba(11, 31, 58, 0.07);
+  border-bottom: 1px solid rgba(11, 31, 58, 0.07);
 }
-/* Industry logos: dark originals, no invert — just reduce opacity */
-.industry-strip .school-logo {
-  filter: opacity(0.55) grayscale(0.2);
+.industry-section h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-top: 8px;
 }
-.industry-strip .school-logo:hover {
-  filter: opacity(0.9) grayscale(0);
+.industry-sub {
+  max-width: 620px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+.industry-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin-top: 44px;
+}
+.industry-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  filter: opacity(0.6) grayscale(0.15);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.industry-logo:hover {
+  filter: opacity(1) grayscale(0);
+  transform: translateY(-2px);
+}
+.industry-logo--wide   { max-width: 120px; }
+.industry-logo--xwide  { max-width: 160px; }
+.industry-logo--square { height: 44px; max-width: 80px; }
+@media (max-width: 640px) {
+  .industry-logos { gap: 32px; }
+  .industry-logo  { height: 28px; }
+  .industry-logo--square { height: 36px; }
 }
 
 /* ── WHY US CARDS ─────────────────────────────────────────── */
