@@ -1429,9 +1429,19 @@ footer {
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .timeline::before { left: 36px; }
-  .timeline-item { grid-template-columns: auto 1fr; gap: 16px; }
+  .timeline-item {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+  /* All items: year col 1, content col 2 */
+  .timeline-item .timeline-year    { grid-column: 1; grid-row: 1; }
+  .timeline-item .timeline-content { grid-column: 2; grid-row: 1; }
+  .timeline-item .timeline-spacer  { display: none; }
+  /* Reset even-item desktop overrides */
+  .timeline-item:nth-child(even) .timeline-year    { grid-column: 1; }
   .timeline-item:nth-child(even) .timeline-content { grid-column: 2; }
-  .timeline-item:nth-child(even) .timeline-spacer { display: none; }
+  .timeline-item:nth-child(even) .timeline-spacer  { display: none; }
   .featured-story { padding: 36px 32px; }
 }
 
