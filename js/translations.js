@@ -418,7 +418,7 @@ const TRANSLATIONS = {
 
       method3_title:  'WeChat',
       method3_value:  'janewu2237',
-      method3_note:   'Preferred for mainland China families. 微信支持。',
+      method3_note:   'Preferred for quick, direct messaging.',
 
       form_h3:        'Send Us a Message',
       form_parent:    'Parent Name',
@@ -440,7 +440,7 @@ const TRANSLATIONS = {
       form_wechat_note: 'Or contact us directly via WeChat:',
 
       wechat_label:   'WeChat: janewu2237',
-      wechat_note:    'Add Dr. Wu on WeChat for direct messaging. Available for mainland China families.',
+      wechat_note:    'Add Dr. Wu on WeChat for direct messaging. Available for all families worldwide.',
 
       info_label:     'Availability',
       info_h3:        'What to Expect',
@@ -888,7 +888,7 @@ const TRANSLATIONS = {
 
       method3_title:  '微信',
       method3_value:  'janewu2237',
-      method3_note:   '国内家庭首选联系方式。微信全程支持。',
+      method3_note:   '快捷直接的沟通方式。',
 
       form_h3:        '发送咨询信息',
       form_parent:    '家长姓名',
@@ -910,7 +910,7 @@ const TRANSLATIONS = {
       form_wechat_note: '或直接通过微信联系我们：',
 
       wechat_label:   '微信：janewu2237',
-      wechat_note:    '添加吴博士微信，直接沟通。专为中国大陆家庭提供支持。',
+      wechat_note:    '添加吴博士微信，直接沟通。服务全球家庭。',
 
       info_label:     '服务说明',
       info_h3:        '您可以期待什么',
