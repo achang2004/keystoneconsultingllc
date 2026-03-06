@@ -1199,6 +1199,13 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
 .contact-method-card a  { color: var(--navy); font-weight: 600; text-decoration: none; }
 .contact-method-card a:hover { color: var(--gold); }
 
+.contact-info-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
 .contact-form {
   background: var(--white);
   border-radius: var(--r-md);
@@ -1461,6 +1468,7 @@ footer {
   .grid-3 { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .contact-method-cards { grid-template-columns: 1fr; }
+  .contact-info-faq { grid-template-columns: 1fr; gap: 40px; }
   .featured-story { padding: 28px 24px; }
   .hero-compact-inner { padding: 120px 0 56px; }
 }
