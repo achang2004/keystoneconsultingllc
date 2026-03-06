@@ -1448,7 +1448,7 @@ footer {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-cta .btn { display: none; }
-  .hamburger { display: flex; }
+  .hamburger { display: flex; margin-left: 16px; }
   .mobile-menu { display: block; }
 }
 
