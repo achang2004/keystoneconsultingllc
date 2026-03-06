@@ -266,7 +266,7 @@ const TRANSLATIONS = {
       bio_p3:       'In 2008, Dr. Wu founded Keystone Consulting LLC with a singular mission: to give every student the same guidance that students with privileged access to U.S. advisors receive. Since then, she has personally guided over 500 students to admission at top universities — with a 100% success rate.',
       bio_p4:       'Dr. Wu\'s approach is deeply personal. She believes that every student has a unique story worth telling, and that the college application process, when done well, is an opportunity for self-discovery — not just a bureaucratic hurdle. She treats every student as if they were her own child.',
       bio_p5:       'Fluent in both English and Mandarin, Dr. Wu is available via WeChat for families in mainland China, ensuring that distance and time zones are never a barrier to first-class advising.',
-      bio_p6:       'Perhaps the most personal testament to her methods: Dr. Wu began guiding her own son through the admissions process starting in middle school, applying the same personalized roadmap she builds for every Keystone student. In 2022, he was admitted to UCLA as a Computer Science major — and has since gone on to intern at both Google and Amazon as a software engineer.',
+      bio_p6:       'Perhaps the most personal testament to her methods: Dr. Wu began guiding her own son through the admissions process starting in middle school, applying the same personalized roadmap she builds for every Keystone student. In 2022, he was admitted to UCLA as a Computer Science major — and has since gone on to intern at both Google and Amazon as a software engineer — he even built the website you\'re reading right now.',
       founder_badge:'Founder & Lead Advisor',
 
       cred_label:   'Credentials',
@@ -735,7 +735,7 @@ const TRANSLATIONS = {
       bio_p3:       '2008年，吴博士在洛杉矶创立了Keystone咨询，使命只有一个：让每一位学生都能获得与拥有顶级美国顾问资源的学生同等的指导。此后，她亲自指导了500多名学生进入顶尖大学，保持100%录取成功率。',
       bio_p4:       '吴博士的方式始终是人性化的。她相信每位学生都有值得讲述的独特故事，认为大学申请过程在正确引导下，是一次自我发现的旅程——而非仅仅是繁琐的行政手续。她将每一位学生视如己出。',
       bio_p5:       '流利使用中英文的吴博士，通过微信为中国大陆家庭提供服务，确保地域和时差永远不是获得一流指导的障碍。',
-      bio_p6:       '最有说服力的证明，莫过于她对自己儿子的亲身培养：吴博士从初中起便为儿子规划升学路径，采用与每位Keystone学生相同的个性化成长路线图。2022年，他以计算机科学专业被UCLA录取，此后先后在Google和Amazon担任软件工程师实习生。',
+      bio_p6:       '最有说服力的证明，莫过于她对自己儿子的亲身培养：吴博士从初中起便为儿子规划升学路径，采用与每位Keystone学生相同的个性化成长路线图。2022年，他以计算机科学专业被UCLA录取，此后先后在Google和Amazon担任软件工程师实习生——连您正在浏览的这个网站，也是他亲手搭建的。',
       founder_badge:'创始人兼首席顾问',
 
       cred_label:   '专业资历',
