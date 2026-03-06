@@ -1471,4 +1471,5 @@ footer {
   .contact-info-faq { grid-template-columns: 1fr; gap: 40px; }
   .featured-story { padding: 28px 24px; }
   .hero-compact-inner { padding: 120px 0 56px; }
+  .hero-compact .container { padding-left: 32px; padding-right: 32px; }
 }
