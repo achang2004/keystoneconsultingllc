@@ -23,8 +23,8 @@ const TRANSLATIONS = {
 
     home: {
       hero_badge:   'Since 2008 · 100% Admission Success',
-      hero_h1:      'Helping Students Gain Admission to <em>Top U.S. Universities</em> Since 2008',
-      hero_sub:     'Keystone Consulting guides students to Stanford, Harvard, MIT, UCLA, and UC Berkeley with personalized, expert-led admissions advising from U.S. professors and former admissions officers.',
+      hero_h1:      'Helping Students Gain Admission to <em>Top U.S. Universities</em> in the AI Era',
+      hero_sub:     'GPA and test scores alone no longer set students apart. We build the human edge that AI cannot replicate: critical thinking, leadership, and compelling narratives that top universities demand.',
       hero_cta1:    'Book Free Consultation',
       hero_cta2:    'View Services',
       stat1_num:    '100%',
@@ -493,8 +493,8 @@ const TRANSLATIONS = {
 
     home: {
       hero_badge:   '自2008年 · 100%录取成功率',
-      hero_h1:      '自2008年起，助力学生<em>成功进入顶尖美国大学</em>',
-      hero_sub:     'Keystone咨询帮助学生进入Stanford、Harvard、MIT、UCLA和UC Berkeley，由美国大学教授和前招生官提供个性化专业升学指导。',
+      hero_h1:      'AI时代，助力学生<em>成功进入顶尖美国大学</em>',
+      hero_sub:     '仅靠GPA和标化成绩已不足以脱颖而出。我们帮助学生打造AI无法替代的核心优势：批判性思维、领导力和有说服力的个人叙事，这正是顶尖大学所看重的。',
       hero_cta1:    '预约免费咨询',
       hero_cta2:    '了解服务',
       stat1_num:    '100%',
