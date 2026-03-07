@@ -335,7 +335,7 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); }
   color: var(--gold-lt);
   margin-bottom: 28px;
 }
-.hero-badge::before { content: '★'; font-size: 0.7rem; }
+.hero-badge::before { content: none; }
 .hero h1 { color: var(--white); margin-bottom: 22px; max-width: 800px; }
 .hero h1 em { color: var(--gold); font-style: normal; }
 .hero-sub {
