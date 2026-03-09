@@ -8,7 +8,11 @@
   <meta property="og:title" content="Keystone Consulting LLC" />
   <meta property="og:description" content="100% admission success rate since 2008. Personalized U.S. university advising for families worldwide." />
   <meta property="og:type" content="website" />
-  <!-- China-safe: system fonts only, no external CDN -->
+  <!-- Google Fonts: Source Serif 4 (headlines) + DM Sans (body) -->
+  <!-- System font fallbacks ensure China accessibility without CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
@@ -16,85 +20,104 @@
 <!-- ── NAV (injected by main.js) ─────────────────────────── -->
 <div id="nav-root"></div>
 
-<!-- ── HERO ───────────────────────────────────────────────── -->
+<!-- ── HERO (asymmetric: text left, photo right) ─────────── -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-lines"></div>
-
   <div class="container hero-inner">
-    <div class="hero-badge" data-i18n="home.hero_badge">Since 2008 · 100% Admission Success</div>
-    <h1 data-i18n-html="home.hero_h1">Helping Students Gain Admission to <em>Top U.S. Universities</em> in the AI Era</h1>
-    <p class="hero-sub" data-i18n="home.hero_sub">GPA and test scores alone no longer set students apart. We build the human edge that AI cannot replicate: critical thinking, leadership, and compelling narratives that top universities demand.</p>
-    <div class="hero-actions">
-      <a href="./pages/contact.html" class="btn btn-primary" data-i18n="home.hero_cta1">Book Free Consultation</a>
-      <a href="./pages/services.html" class="btn btn-outline" data-i18n="home.hero_cta2">View Services</a>
+    <div class="hero-text">
+      <div class="hero-badge" data-i18n="home.hero_badge">Since 2008 · 100% Admission Success</div>
+      <h1 data-i18n-html="home.hero_h1">Helping Students Gain Admission to <em>Top U.S. Universities</em> in the AI Era</h1>
+      <p class="hero-sub" data-i18n="home.hero_sub">GPA and test scores alone no longer set students apart. We build the human edge that AI cannot replicate: critical thinking, leadership, and compelling narratives that top universities demand.</p>
+      <div class="hero-actions">
+        <a href="./pages/contact.html" class="btn btn-primary" data-i18n="home.hero_cta1">Book Free Consultation</a>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-num" data-i18n="home.stat1_num">100%</div>
-        <div class="stat-label" data-i18n="home.stat1_label">Admission Success Rate</div>
-      </div>
-      <div>
-        <div class="stat-num" data-i18n="home.stat2_num">17+</div>
-        <div class="stat-label" data-i18n="home.stat2_label">Years of Experience</div>
-      </div>
-      <div>
-        <div class="stat-num" data-i18n="home.stat3_num">500+</div>
-        <div class="stat-label" data-i18n="home.stat3_label">Students Advised</div>
-      </div>
+    <div class="hero-image">
+      <img src="./assets/images/ucla_campus.jpg" alt="UCLA Royce Hall campus" class="hero-photo">
     </div>
   </div>
-
 </section>
 
-<div class="schools-strip">
-  <span class="schools-label" data-i18n="home.schools_label">Students placed at</span>
-  <div class="marquee-track-wrap">
-    <div class="marquee-track">
-      <!-- set 1 -->
-      <img src="./assets/logos/stanford.png"        alt="Stanford"        class="school-logo school-logo--wide">
-      <img src="./assets/logos/harvard.svg"         alt="Harvard"         class="school-logo">
-      <img src="./assets/logos/mit.png"             alt="MIT"             class="school-logo school-logo--square">
-      <img src="./assets/logos/berkeley.png"        alt="UC Berkeley"     class="school-logo">
-      <img src="./assets/logos/ucla.svg"            alt="UCLA"            class="school-logo school-logo--square">
-      <img src="./assets/logos/carnegie_mellon.png" alt="Carnegie Mellon" class="school-logo school-logo--xwide">
-      <img src="./assets/logos/caltech.svg"         alt="Caltech"         class="school-logo">
-      <img src="./assets/logos/brown.png"           alt="Brown"           class="school-logo school-logo--wide">
-      <img src="./assets/logos/yale.png"            alt="Yale"            class="school-logo school-logo--square">
-      <!-- set 2 (duplicate for seamless loop) -->
-      <img src="./assets/logos/stanford.png"        alt="Stanford"        class="school-logo school-logo--wide" aria-hidden="true">
-      <img src="./assets/logos/harvard.svg"         alt="Harvard"         class="school-logo" aria-hidden="true">
-      <img src="./assets/logos/mit.png"             alt="MIT"             class="school-logo school-logo--square" aria-hidden="true">
-      <img src="./assets/logos/berkeley.png"        alt="UC Berkeley"     class="school-logo" aria-hidden="true">
-      <img src="./assets/logos/ucla.svg"            alt="UCLA"            class="school-logo school-logo--square" aria-hidden="true">
-      <img src="./assets/logos/carnegie_mellon.png" alt="Carnegie Mellon" class="school-logo school-logo--xwide" aria-hidden="true">
-      <img src="./assets/logos/caltech.svg"         alt="Caltech"         class="school-logo" aria-hidden="true">
-      <img src="./assets/logos/brown.png"           alt="Brown"           class="school-logo school-logo--wide" aria-hidden="true">
-      <img src="./assets/logos/yale.png"            alt="Yale"            class="school-logo school-logo--square" aria-hidden="true">
+<!-- ── TRUST BAR (stats, understated) ────────────────────── -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <div class="trust-num" data-i18n="home.stat1_num">100%</div>
+        <div class="trust-label" data-i18n="home.stat1_label">Admission Success Rate</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num" data-i18n="home.stat2_num">17+</div>
+        <div class="trust-label" data-i18n="home.stat2_label">Years of Experience</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-num" data-i18n="home.stat3_num">500+</div>
+        <div class="trust-label" data-i18n="home.stat3_label">Students Advised</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- ── INDUSTRY ADVISORS SECTION ─────────────────────────── -->
+<!-- ── SCHOOLS (static, grayscale) ───────────────────────── -->
+<div class="schools-strip">
+  <span class="schools-label" data-i18n="home.schools_label">Our students have been admitted to</span>
+  <div class="marquee-track-wrap">
+    <div class="marquee-track">
+      <!-- Set 1 -->
+      <img src="./assets/logos/stanford.svg"        alt="Stanford"        class="school-logo">
+      <img src="./assets/logos/harvard.svg"         alt="Harvard"         class="school-logo">
+      <img src="./assets/logos/mit.svg"             alt="MIT"             class="school-logo">
+      <img src="./assets/logos/berkeley.svg"        alt="UC Berkeley"     class="school-logo">
+      <img src="./assets/logos/ucla.svg"            alt="UCLA"            class="school-logo">
+      <img src="./assets/logos/princeton.svg"       alt="Princeton"       class="school-logo">
+      <img src="./assets/logos/caltech.svg"         alt="Caltech"         class="school-logo">
+      <img src="./assets/logos/carnegie_mellon.svg" alt="Carnegie Mellon" class="school-logo">
+      <img src="./assets/logos/brown.svg"           alt="Brown"           class="school-logo">
+      <img src="./assets/logos/yale.svg"            alt="Yale"            class="school-logo">
+      <img src="./assets/logos/cornell.svg"         alt="Cornell"         class="school-logo">
+      <img src="./assets/logos/usc.svg"             alt="USC"             class="school-logo">
+      <img src="./assets/logos/upenn.svg"           alt="UPenn"           class="school-logo">
+      <img src="./assets/logos/nyu.svg"             alt="NYU"             class="school-logo">
+      <img src="./assets/logos/georgia_tech.svg"    alt="Georgia Tech"    class="school-logo">
+      <!-- Set 2 (duplicate for seamless loop) -->
+      <img src="./assets/logos/stanford.svg"        alt="Stanford"        class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/harvard.svg"         alt="Harvard"         class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/mit.svg"             alt="MIT"             class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/berkeley.svg"        alt="UC Berkeley"     class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/ucla.svg"            alt="UCLA"            class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/princeton.svg"       alt="Princeton"       class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/caltech.svg"         alt="Caltech"         class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/carnegie_mellon.svg" alt="Carnegie Mellon" class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/brown.svg"           alt="Brown"           class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/yale.svg"            alt="Yale"            class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/cornell.svg"         alt="Cornell"         class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/usc.svg"             alt="USC"             class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/upenn.svg"           alt="UPenn"           class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/nyu.svg"             alt="NYU"             class="school-logo" aria-hidden="true">
+      <img src="./assets/logos/georgia_tech.svg"    alt="Georgia Tech"    class="school-logo" aria-hidden="true">
+    </div>
+  </div>
+</div>
+
+<!-- ── INDUSTRY ADVISORS (understated logo row) ──────────── -->
 <section class="section industry-section" id="advisors">
   <div class="container">
-    <div class="reveal" style="text-align:center; margin-bottom:40px;">
+    <div class="reveal text-center">
       <span class="label" data-i18n="home.industry_label">Our Advisors Come From</span>
       <h2 data-i18n-html="home.industry_h2">Industry <span class="gold">Leaders</span></h2>
-      <p class="industry-sub" data-i18n="home.industry_sub">Our advisory network includes professionals from the world's most prestigious technology, finance, and research institutions — bringing real-world insight to every student's application.</p>
+      <p class="industry-sub" data-i18n="home.industry_sub">Our advisor network includes professors, researchers, and professionals from top technology companies, aerospace agencies, global media platforms, and international financial institutions.</p>
     </div>
     <div class="industry-logos reveal">
-      <img src="./assets/logos/google.png"      alt="Google"        class="industry-logo industry-logo--wide">
-      <img src="./assets/logos/aws.png"         alt="Amazon / AWS"  class="industry-logo industry-logo--wide">
-      <img src="./assets/logos/nasa.png"        alt="NASA"          class="industry-logo industry-logo--square">
-      <img src="./assets/logos/tiktok.svg"      alt="TikTok"        class="industry-logo industry-logo--wide">
-      <img src="./assets/logos/bankofchina.png" alt="Bank of China" class="industry-logo industry-logo--xwide">
+      <img src="./assets/logos/google.png"      alt="Google"         class="industry-logo industry-logo--wide">
+      <img src="./assets/logos/aws.png"          alt="AWS"            class="industry-logo industry-logo--wide">
+      <img src="./assets/logos/nasa.png"         alt="NASA"           class="industry-logo industry-logo--square">
+      <img src="./assets/logos/tiktok.svg"       alt="TikTok"         class="industry-logo">
+      <img src="./assets/logos/bankofchina.png"  alt="Bank of China"  class="industry-logo industry-logo--xwide">
     </div>
   </div>
 </section>
 
 <!-- ── WHY US ─────────────────────────────────────────────── -->
-<section class="section" id="why">
+<section class="section section--white" id="why">
   <div class="container">
     <div class="reveal">
       <span class="label" data-i18n="home.why_label">Why Families Choose Us</span>
@@ -103,7 +126,6 @@
     <div class="why-grid">
       <div class="why-card reveal">
         <div class="why-icon">
-          <!-- Trophy / star award -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
         </div>
         <h3 data-i18n="home.why1_title">Proven Track Record</h3>
@@ -111,7 +133,6 @@
       </div>
       <div class="why-card reveal">
         <div class="why-icon">
-          <!-- Graduation cap -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
         </div>
         <h3 data-i18n="home.why2_title">Elite Advisors</h3>
@@ -119,7 +140,6 @@
       </div>
       <div class="why-card reveal">
         <div class="why-icon">
-          <!-- Personalized roadmap / person with path -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         </div>
         <h3 data-i18n="home.why3_title">Fully Personalized</h3>
@@ -127,7 +147,6 @@
       </div>
       <div class="why-card reveal">
         <div class="why-icon">
-          <!-- WeChat Simple Icon -->
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/></svg>
         </div>
         <h3 data-i18n="home.why4_title">Always Available</h3>
@@ -174,10 +193,10 @@
   </div>
 </section>
 
-<!-- ── SERVICES PREVIEW ────────────────────────────────────── -->
-<section class="section section--dark" id="services">
+<!-- ── SERVICES (clean list, not numbered cards) ──────────── -->
+<section class="section section--white" id="services">
   <div class="container">
-    <div class="reveal">
+    <div class="reveal text-center">
       <span class="label" data-i18n="home.svc_label">What We Do</span>
       <h2 data-i18n-html="home.svc_h2">Comprehensive <span class="gold">Admissions Support</span></h2>
     </div>
@@ -186,37 +205,37 @@
         <div class="service-num">01</div>
         <h3 data-i18n="home.svc1_title">Dream School Planning</h3>
         <p data-i18n="home.svc1_body">Identifying the best-fit universities and majors tailored to your child's unique strengths, goals, and academic profile.</p>
-        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More →</a>
+        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More &rarr;</a>
       </div>
       <div class="service-item reveal">
         <div class="service-num">02</div>
         <h3 data-i18n="home.svc2_title">Standout Applications</h3>
         <p data-i18n="home.svc2_body">We craft compelling narratives that showcase each student's achievements and personality to genuinely differentiate them from thousands of applicants.</p>
-        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More →</a>
+        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More &rarr;</a>
       </div>
       <div class="service-item reveal">
         <div class="service-num">03</div>
         <h3 data-i18n="home.svc3_title">Essay & Interview Coaching</h3>
         <p data-i18n="home.svc3_body">Memorable personal statements, supplemental essays, and interview preparation that build confidence and leave a lasting impression.</p>
-        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More →</a>
+        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More &rarr;</a>
       </div>
       <div class="service-item reveal">
         <div class="service-num">04</div>
         <h3 data-i18n="home.svc4_title">Academic & Activities Strategy</h3>
         <p data-i18n="home.svc4_body">Strategic course selection, extracurricular planning, volunteering, and internship guidance to maximize your child's competitive profile.</p>
-        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More →</a>
+        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More &rarr;</a>
       </div>
       <div class="service-item reveal">
         <div class="service-num">05</div>
         <h3 data-i18n="home.svc5_title">Summer & Research Programs</h3>
         <p data-i18n="home.svc5_body">Exclusive access to research and summer opportunities at UC Berkeley, UCLA, and Stanford through our trusted partner network.</p>
-        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More →</a>
+        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More &rarr;</a>
       </div>
       <div class="service-item reveal">
         <div class="service-num">06</div>
         <h3 data-i18n="home.svc6_title">Competitions & Hackathons</h3>
         <p data-i18n="home.svc6_body">We connect students with partner-run competitions and hackathons that build real-world experience and add distinction to any application.</p>
-        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More →</a>
+        <a href="./pages/services.html" class="service-link" data-i18n="home.svc_more">Learn More &rarr;</a>
       </div>
     </div>
   </div>
@@ -254,14 +273,14 @@
   </div>
 </section>
 
-<!-- ── FOUNDER SNIPPET ─────────────────────────────────────── -->
-<section class="section section--mid" id="about">
+<!-- ── FOUNDER (large editorial feature) ──────────────────── -->
+<section class="section section--white" id="about">
   <div class="container">
     <div class="founder-inner">
       <div class="reveal">
         <div class="founder-portrait">
           <div class="founder-portrait-inner">
-            <img src="assets/images/jian_wu.jpg" alt="Dr. Jian Wu" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+            <img src="assets/images/jian_wu.jpg" alt="Dr. Jian Wu, founder of Keystone Consulting" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
           </div>
           <div class="founder-portrait-badge" data-i18n="home.founder_badge">Founder & Lead Advisor</div>
         </div>
@@ -278,51 +297,45 @@
           <span class="cred-tag" data-i18n="home.cred2">20+ Years Experience</span>
           <span class="cred-tag" data-i18n="home.cred3">U.S. Higher Education Expert</span>
           <span class="cred-tag" data-i18n="home.cred4">WeChat Support</span>
-          <span class="cred-tag" data-i18n="home.cred5">Bilingual (English / 中文)</span>
+          <span class="cred-tag" data-i18n="home.cred5">Bilingual (English / &#x4E2D;&#x6587;)</span>
         </div>
         <div style="margin-top:28px;">
-          <a href="./pages/about.html" class="btn btn-outline" data-i18n="home.founder_link">Full Biography →</a>
+          <a href="./pages/about.html" class="btn btn-outline" data-i18n="home.founder_link">Full Biography &rarr;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── TESTIMONIALS ────────────────────────────────────────── -->
-<section class="section section--white" id="testimonials">
+<!-- ── TESTIMONIALS (editorial pull-quotes) ───────────────── -->
+<section class="section section--cream" id="testimonials">
   <div class="container">
     <div class="reveal text-center">
       <span class="label" data-i18n="home.testi_label">What Families Say</span>
-      <h2 data-i18n-html="home.testi_h2">Stories from Our <span class="gold">Students</span></h2>
+      <h2 data-i18n-html="home.testi_h2">Stories from Our <span class="gold">Families</span></h2>
     </div>
     <div class="testimonials-grid">
       <div class="t-card reveal">
-        <div class="t-stars">★★★★★</div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-body" data-i18n="home.t1_body">Keystone treated our child like their own. The step-by-step guidance and essay coaching made all the difference. We couldn't have navigated this process without Dr. Wu.</p>
         <div class="t-author" data-i18n="home.t1_author">Parent of a student admitted Class of 2024</div>
         <div class="t-meta" data-i18n="home.t1_meta">UC Berkeley · Computer Science · China · 2024</div>
       </div>
       <div class="t-card reveal">
-        <div class="t-stars">★★★★★</div>
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="t-body" data-i18n="home.t2_body">We came from mainland China with no knowledge of the U.S. admissions process. Dr. Wu explained everything clearly in both English and Chinese and was always available on WeChat. Absolutely invaluable.</p>
         <div class="t-author" data-i18n="home.t2_author">Parent of a student admitted Class of 2023</div>
         <div class="t-meta" data-i18n="home.t2_meta">UCLA · Economics · China · 2023</div>
       </div>
-      <div class="t-card reveal">
-        <div class="t-stars">★★★★★</div>
-        <p class="t-body" data-i18n="home.t3_body">My daughter's essays went from average to truly remarkable after working with the Keystone team. She was accepted to her dream school and is thriving. Worth every penny.</p>
-        <div class="t-author" data-i18n="home.t3_author">Parent of a student admitted Class of 2024</div>
-        <div class="t-meta" data-i18n="home.t3_meta">Columbia University · Premed · Taiwan · 2024</div>
-      </div>
     </div>
     <div style="text-align:center; margin-top:40px;">
-      <a href="./pages/success-stories.html" class="btn btn-outline">View All Success Stories →</a>
+      <a href="./pages/success-stories.html" class="btn btn-outline" data-i18n="home.testi_more">View All Success Stories &rarr;</a>
     </div>
   </div>
 </section>
 
-<!-- ── CASE STUDIES ───────────────────────────────────────── -->
-<section class="section section--cream" id="case-studies">
+<!-- ── CASE STUDY (compact editorial) ────────────────────── -->
+<section class="section section--white" id="case-studies">
   <div class="container">
     <div class="reveal text-center">
       <span class="label" data-i18n="home.case_label">Real Results</span>
@@ -353,19 +366,19 @@
           <h4 class="case-section-title" data-i18n="home.case1_actions_title">What Keystone Did</h4>
           <ul class="case-actions">
             <li>
-              <div class="case-action-icon">01</div>
+              <div class="case-action-icon">1</div>
               <div data-i18n-html="home.case1_a1"><strong>Built a competition strategy from scratch.</strong> Identified the NASA Space Apps Challenge as the right fit — high prestige, team-based, and aligned with Jason's interest in data science. Recruited and organized a team of fellow students.</div>
             </li>
             <li>
-              <div class="case-action-icon">02</div>
+              <div class="case-action-icon">2</div>
               <div data-i18n-html="home.case1_a2"><strong>Hands-on coaching through every round.</strong> Guided the team on project framing, presentation, and technical execution. Result: <em>Top 10% finish out of 10,000+ teams worldwide.</em></div>
             </li>
             <li>
-              <div class="case-action-icon">03</div>
+              <div class="case-action-icon">3</div>
               <div data-i18n-html="home.case1_a3"><strong>Turned the experience into a narrative.</strong> The competition became the centerpiece of Jason's application — demonstrating initiative, teamwork, and real-world problem-solving in a way GPA alone never could.</div>
             </li>
             <li>
-              <div class="case-action-icon">04</div>
+              <div class="case-action-icon">4</div>
               <div data-i18n-html="home.case1_a4"><strong>Essay and interview coaching.</strong> Helped Jason articulate his growth from a quiet student into a competition leader — a compelling arc that resonated with UC Berkeley's admissions committee.</div>
             </li>
           </ul>
@@ -381,13 +394,13 @@
     </div>
 
     <div style="text-align:center; margin-top:40px;">
-      <a href="./pages/success-stories.html" class="btn btn-outline-navy" data-i18n="home.case_cta">View All Success Stories →</a>
+      <a href="./pages/success-stories.html" class="btn btn-outline-navy" data-i18n="home.case_cta">View All Success Stories &rarr;</a>
     </div>
   </div>
 </section>
 
-<!-- ── FAQ ────────────────────────────────────────────────── -->
-<section class="section section--dark" id="faq">
+<!-- ── FAQ (clean, white background) ──────────────────────── -->
+<section class="section section--cream" id="faq">
   <div class="container">
     <div class="reveal text-center">
       <span class="label" data-i18n="home.faq_label">Common Questions</span>
@@ -455,17 +468,18 @@
   </div>
 </section>
 
-<!-- ── CTA BANNER ──────────────────────────────────────────── -->
+<!-- ── CTA BANNER (warm, personal invitation) ─────────────── -->
 <section class="cta-banner">
   <div class="container">
     <div class="reveal">
       <h2 data-i18n="home.cta_h2">Ready to Take the First Step?</h2>
       <p data-i18n="home.cta_p">Schedule a free, no-obligation consultation with Dr. Jian Wu today.</p>
       <div class="cta-actions">
-        <a href="./pages/contact.html" class="btn btn-primary btn-lg" data-i18n="home.cta_btn">Book Free Consultation</a>
-        <a href="tel:+18182452237" class="btn btn-outline btn-lg" data-i18n="home.cta_phone">Call: +1 (818) 245-2237</a>
+        <a href="./pages/contact.html" class="btn btn-white btn-lg" data-i18n="home.cta_btn">Book Free Consultation</a>
       </div>
-      <p style="margin-top:20px; color:rgba(255,255,255,0.45); font-size:0.85rem;">
+      <p style="margin-top:24px; color:rgba(255,255,255,0.5); font-size:0.85rem;">
+        <span data-i18n="home.cta_phone_text">Call: +1 (818) 245-2237</span>
+        &nbsp;&middot;&nbsp;
         <span data-i18n="home.cta_wechat">WeChat: janewu2237</span>
       </p>
     </div>
