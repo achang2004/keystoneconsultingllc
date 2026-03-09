@@ -389,10 +389,6 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
 }
 
 /* ── SCHOOLS STRIP (marquee) ──────────────────────────────── */
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
 .schools-strip {
   background: var(--white);
   border-bottom: 1px solid var(--light-gray);
@@ -423,13 +419,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
 .marquee-track {
   display: flex;
   align-items: center;
-  gap: 60px;
   width: max-content;
-  animation: marquee 30s linear infinite;
-  padding: 0 30px;
-}
-.marquee-track:hover {
-  animation-play-state: paused;
+  will-change: transform;
 }
 .school-logo {
   height: 30px;
@@ -441,6 +432,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
   vertical-align: middle;
   transition: opacity 0.2s ease;
   flex-shrink: 0;
+  margin-right: 60px;
 }
 .school-logo:hover {
   opacity: 0.7;
@@ -458,8 +450,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
     text-align: center;
   }
   .marquee-track-wrap { width: 100%; }
-  .school-logo { height: 24px; }
-  .marquee-track { gap: 40px; animation-duration: 35s; }
+  .school-logo { height: 24px; max-height: 24px; margin-right: 40px; }
 }
 
 /* ── INDUSTRY ADVISORS (understated on homepage) ──────────── */
