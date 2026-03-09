@@ -425,7 +425,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
   align-items: center;
   gap: 60px;
   width: max-content;
-  animation: marquee 45s linear infinite;
+  animation: marquee 30s linear infinite;
   padding: 0 30px;
 }
 .marquee-track:hover {
