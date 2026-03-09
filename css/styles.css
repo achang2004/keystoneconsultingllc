@@ -1233,26 +1233,6 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
 .stats-grid .stat-num  { color: var(--white); font-size: 3rem; }
 .stats-grid .stat-label { color: rgba(255,255,255,0.7); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; }
 
-/* ── SCHOOLS PLACED GRID ──────────────────────────────────── */
-.schools-placed-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 40px;
-  justify-content: center;
-}
-.school-pill {
-  background: var(--white);
-  border: 1.5px solid var(--light-gray);
-  border-radius: var(--r-pill);
-  padding: 8px 20px;
-  font-family: var(--serif);
-  font-size: 0.9rem;
-  color: var(--charcoal);
-  transition: border-color var(--ease), background var(--ease);
-}
-.school-pill:hover { border-color: var(--teal); background: var(--teal-glass); }
-
 /* ── FOOTER ───────────────────────────────────────────────── */
 footer {
   background: var(--cream);

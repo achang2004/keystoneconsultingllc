@@ -221,12 +221,9 @@ function initStoryFilter() {
   });
 }
 
-/* ── MARQUEE (JS-driven, mobile-safe) ────────────────────── */
-function initMarquee() {
-  const track = document.getElementById('marqueeTrack');
-  if (!track) return;
-
-  // Duplicate logos so the track is always wider than the viewport
+/* ── MARQUEE (JS-driven, mobile-safe, reusable) ──────────── */
+function startMarquee(track, speed) {
+  // Duplicate children so the track is always wider than the viewport
   const originals = Array.from(track.children);
   originals.forEach(el => {
     const clone = el.cloneNode(true);
@@ -236,7 +233,6 @@ function initMarquee() {
 
   let offset = 0;
   let paused = false;
-  const speed = 0.5; // px per frame (~30px/s at 60fps)
 
   track.addEventListener('mouseenter', () => { paused = true; });
   track.addEventListener('mouseleave', () => { paused = false; });
@@ -244,7 +240,6 @@ function initMarquee() {
   function step() {
     if (!paused) {
       offset += speed;
-      // When the first logo has fully scrolled off, move it to the end
       const first = track.firstElementChild;
       const firstWidth = first.offsetWidth +
         parseFloat(getComputedStyle(first).marginRight);
@@ -257,6 +252,13 @@ function initMarquee() {
     requestAnimationFrame(step);
   }
   requestAnimationFrame(step);
+}
+
+function initMarquee() {
+  document.querySelectorAll('.marquee-track').forEach(track => {
+    const speed = parseFloat(track.dataset.speed) || 0.5;
+    startMarquee(track, speed);
+  });
 }
 
 /* ── INIT ─────────────────────────────────────────────────── */

@@ -237,10 +237,6 @@ const TRANSLATIONS = {
 
       pkg_cta:      'Contact for Free Consultation',
 
-      schools_label:'Where Our Students Go',
-      schools_h2:   'A Track Record of <span class="gold">Elite Admissions</span>',
-      schools_sub:  'Our students have been admitted to some of the most prestigious universities in the United States.',
-
       cta_h2:       'Start with a Free Consultation',
       cta_p:        'No obligations. Just a conversation about your child\'s goals and how we can help.',
       cta_btn:      'Book Free Consultation',
@@ -697,10 +693,6 @@ const TRANSLATIONS = {
       pkg3_f6:      '全天候微信+视频支持',
 
       pkg_cta:      '联系我们免费咨询',
-
-      schools_label:'学生录取院校',
-      schools_h2:   '<span class="gold">顶尖院校</span>的录取记录',
-      schools_sub:  '我们的学生已被美国众多最负盛名的大学录取。',
 
       cta_h2:       '预约免费咨询，开启您的旅程',
       cta_p:        '无义务，只是一次关于孩子目标和我们如何帮助的真诚对话。',
