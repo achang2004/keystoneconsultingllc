@@ -420,7 +420,7 @@ const TRANSLATIONS = {
 
       method3_title:  'WeChat',
       method3_value:  'janewu2237',
-      method3_note:   'Preferred for quick, direct messaging.',
+      method3_note:   'Preferred for quick, direct messaging',
 
       form_h3:        'Send Us a Message',
       form_parent:    'Parent Name',
@@ -892,7 +892,7 @@ const TRANSLATIONS = {
 
       method3_title:  '微信',
       method3_value:  'janewu2237',
-      method3_note:   '快捷直接的沟通方式。',
+      method3_note:   '快捷直接的沟通方式',
 
       form_h3:        '发送咨询信息',
       form_parent:    '家长姓名',
