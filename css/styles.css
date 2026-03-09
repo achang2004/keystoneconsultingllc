@@ -449,7 +449,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
   .schools-strip {
     flex-direction: column;
     padding: 16px 0;
-    gap: 12px;
+    gap: 20px;
   }
   .schools-label {
     padding: 0 20px;
