@@ -143,8 +143,6 @@ const TRANSLATIONS = {
 
       cta_h2:       'Let\u2019s talk about your child\u2019s future.',
       cta_p:        'Schedule a free, no-obligation consultation with Dr. Jian Wu.',
-      cta_phone:    'Call: +1 (818) 245-2237',
-      cta_phone_text: 'Call: +1 (818) 245-2237',
       cta_wechat:   'WeChat: janewu2237',
       cta_btn:      'Book Free Consultation',
     },
@@ -301,7 +299,7 @@ const TRANSLATIONS = {
       quote_cite:   'Dr. Jian Wu, Founder',
 
       cta_h2:       'Schedule a Conversation with Dr. Wu',
-      cta_p:        'Free, no-obligation consultation. Available via phone, email, or WeChat.',
+      cta_p:        'Free, no-obligation consultation. Available via email or WeChat.',
       cta_btn:      'Book Free Consultation',
     },
 
@@ -395,17 +393,15 @@ const TRANSLATIONS = {
       hero_h1:      'Start with a Free Consultation',
       hero_sub:     'Dr. Wu responds to all inquiries within 24 hours — often much sooner. WeChat available for mainland China families.',
 
-      method1_title:  'Phone',
-      method1_value:  '+1 (818) 245-2237',
-      method1_note:   'Call or text anytime',
-
       method2_title:  'Email',
       method2_value:  'janewula@gmail.com',
       method2_note:   'Response within 24 hours',
+      copy_email_btn: 'Copy Email',
 
       method3_title:  'WeChat',
       method3_value:  'janewu2237',
-      method3_note:   'Preferred for quick, direct messaging',
+      method3_note:   'Copy the ID and search in WeChat → Add Contacts',
+      copy_btn:       'Copy ID',
 
       form_h3:        'Send Us a Message',
       form_parent:    'Parent Name',
@@ -427,13 +423,13 @@ const TRANSLATIONS = {
       form_wechat_note: 'Or contact us directly via WeChat:',
 
       wechat_label:   'WeChat: janewu2237',
-      wechat_note:    'Add Dr. Wu on WeChat for direct messaging. Available for all families worldwide.',
+      wechat_note:    'Copy the ID above and search in WeChat → Add Contacts, or scan the QR code with WeChat\'s scanner.',
 
       info_label:     'Availability',
       info_h3:        'What to Expect',
       info_l1:        'Free, no-obligation 30-minute consultation',
       info_l2:        'Response within 24 hours (usually same day)',
-      info_l3:        'Available via phone, email, or WeChat',
+      info_l3:        'Available via email or WeChat',
       info_l4:        'Bilingual support in English and Chinese',
       info_l5:        'Based in Los Angeles, CA · Serving families worldwide',
 
@@ -600,8 +596,6 @@ const TRANSLATIONS = {
 
       cta_h2:       '让我们聊聊孩子的未来。',
       cta_p:        '预约与吴健博士的免费、无义务咨询。',
-      cta_phone:    '电话：+1 (818) 245-2237',
-      cta_phone_text: '电话：+1 (818) 245-2237',
       cta_wechat:   '微信：janewu2237',
       cta_btn:      '预约免费咨询',
     },
@@ -758,7 +752,7 @@ const TRANSLATIONS = {
       quote_cite:   '吴健博士，创始人',
 
       cta_h2:       '预约与吴博士的一对一咨询',
-      cta_p:        '免费，无义务。支持电话、邮件或微信。',
+      cta_p:        '免费，无义务。支持邮件或微信。',
       cta_btn:      '预约免费咨询',
     },
 
@@ -852,17 +846,15 @@ const TRANSLATIONS = {
       hero_h1:      '从免费咨询开始',
       hero_sub:     '吴博士对所有咨询在24小时内回复——通常更快。支持微信联系，专为国内家庭提供服务。',
 
-      method1_title:  '电话',
-      method1_value:  '+1 (818) 245-2237',
-      method1_note:   '随时致电或发短信',
-
       method2_title:  '电子邮件',
       method2_value:  'janewula@gmail.com',
       method2_note:   '24小时内回复',
+      copy_email_btn: '复制邮箱',
 
       method3_title:  '微信',
       method3_value:  'janewu2237',
-      method3_note:   '快捷直接的沟通方式',
+      method3_note:   '复制微信号，在微信中搜索 → 添加联系人',
+      copy_btn:       '复制微信号',
 
       form_h3:        '发送咨询信息',
       form_parent:    '家长姓名',
@@ -884,13 +876,13 @@ const TRANSLATIONS = {
       form_wechat_note: '或直接通过微信联系我们：',
 
       wechat_label:   '微信：janewu2237',
-      wechat_note:    '添加吴博士微信，直接沟通。服务全球家庭。',
+      wechat_note:    '复制上方微信号，在微信中搜索添加，或用微信扫一扫扫描二维码',
 
       info_label:     '服务说明',
       info_h3:        '您可以期待什么',
       info_l1:        '30分钟免费、无义务咨询',
       info_l2:        '24小时内回复（通常当天）',
-      info_l3:        '支持电话、邮件或微信',
+      info_l3:        '支持邮件或微信',
       info_l4:        '中英双语服务',
       info_l5:        '总部位于洛杉矶，服务全球家庭',
 

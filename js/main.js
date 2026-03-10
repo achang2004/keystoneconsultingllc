@@ -74,7 +74,6 @@ function buildFooter() {
       <div class="footer-col">
         <h4 data-i18n="footer.contact_heading">Contact</h4>
         <ul>
-          <li><a href="tel:+18182452237">+1 (818) 245-2237</a></li>
           <li><a href="mailto:janewula@gmail.com">janewula@gmail.com</a></li>
           <li><a href="${BASE}pages/contact.html">WeChat: janewu2237</a></li>
           <li><a href="${BASE}pages/contact.html" data-i18n="nav.cta">Free Consultation</a></li>
@@ -221,6 +220,40 @@ function initStoryFilter() {
   });
 }
 
+/* ── COPY ID BUTTONS ─────────────────────────────────────── */
+function copyText(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text);
+  }
+  // Fallback for HTTP / older browsers
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand('copy');
+  document.body.removeChild(ta);
+  return Promise.resolve();
+}
+
+function initCopyButtons() {
+  document.querySelectorAll('.copy-id-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = btn.dataset.copy;
+      copyText(text).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = currentLang === 'zh' ? '已复制!' : 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  });
+}
+
 /* ── MARQUEE (JS-driven, mobile-safe, reusable) ──────────── */
 function startMarquee(track, speed) {
   // Duplicate children so the track is always wider than the viewport
@@ -328,5 +361,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 12. Marquee (JS-driven for mobile compatibility)
   initMarquee();
+
+  // 13. Copy ID buttons (contact page)
+  initCopyButtons();
 
 });
