@@ -32,7 +32,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
   --r:     6px;
   --r-md:  10px;
   --r-lg:  16px;
-  --r-pill: 100px;
+  --r-pill: 8px;
 
   --shadow-sm:  0 2px 12px rgba(0, 0, 0, 0.05);
   --shadow-md:  0 4px 24px rgba(0, 0, 0, 0.08);
