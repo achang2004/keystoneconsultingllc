@@ -391,7 +391,7 @@ const TRANSLATIONS = {
     contact: {
       hero_label:   'Get In Touch',
       hero_h1:      'Start with a Free Consultation',
-      hero_sub:     'Dr. Wu responds to all inquiries within 24 hours — often much sooner. WeChat available for mainland China families.',
+      hero_sub:     'Dr. Wu responds to all inquiries within 24 hours — often much sooner. Available via WeChat or email worldwide.',
 
       method2_title:  'Email',
       method2_value:  'janewula@gmail.com',
@@ -844,7 +844,7 @@ const TRANSLATIONS = {
     contact: {
       hero_label:   '联系我们',
       hero_h1:      '从免费咨询开始',
-      hero_sub:     '吴博士对所有咨询在24小时内回复——通常更快。支持微信联系，专为国内家庭提供服务。',
+      hero_sub:     '吴博士对所有咨询在24小时内回复——通常更快。支持微信或邮件联系，服务全球家庭。',
 
       method2_title:  '电子邮件',
       method2_value:  'janewula@gmail.com',
