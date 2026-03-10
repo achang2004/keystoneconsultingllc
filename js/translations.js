@@ -330,6 +330,42 @@ const TRANSLATIONS = {
       featured_quote: '"When we first contacted Dr. Wu, our daughter was a 10th grader with good grades but no direction. By the time she applied, she had conducted university-level research, led a school initiative that affected 200 students, and written essays that made us cry — in the best possible way. She was admitted to UC Berkeley as her first choice. Dr. Wu didn\'t just help her apply to college; she helped her discover who she is."',
       featured_cite:  'Parent of Class of 2024 · UC Berkeley, Computer Science',
 
+      s1_field: 'Computer Science',
+      s1_quote: '"Keystone treated our child like their own. The step-by-step guidance and essay coaching made all the difference. We couldn\'t have navigated this process without Dr. Wu."',
+      s1_meta:  'Parent of Class of 2024 · ★★★★★',
+
+      s2_field: 'Economics',
+      s2_quote: '"We came from mainland China with no knowledge of U.S. admissions. Dr. Wu explained everything clearly in both languages and was always available on WeChat. Invaluable."',
+      s2_meta:  'Parent of Class of 2023 · ★★★★★',
+
+      s3_field: 'Pre-Medicine',
+      s3_quote: '"My daughter\'s essays went from average to truly remarkable. She was accepted to her dream school and is thriving. Worth every penny."',
+      s3_meta:  'Parent of Class of 2024 · ★★★★★',
+
+      s4_field: 'Electrical Engineering',
+      s4_quote: '"Dr. Wu helped my son find the research angle that made his application stand out. He was one of very few international students admitted that year."',
+      s4_meta:  'Parent of Class of 2022 · ★★★★★',
+
+      s5_field: 'Applied Mathematics',
+      s5_quote: '"From the moment we started working with Keystone, we knew we were in expert hands. The personalized attention Dr. Wu gave our son was extraordinary."',
+      s5_meta:  'Parent of Class of 2023 · ★★★★★',
+
+      s6_field: 'Computer Science',
+      s6_quote: '"Keystone helped us understand the U.S. college application system from the ground up. Our daughter got into her first-choice school for CS."',
+      s6_meta:  'Parent of Class of 2024 · ★★★★★',
+
+      s7_field: 'Bioengineering',
+      s7_quote: '"The summer research program Dr. Wu connected us with was a game-changer for my son\'s application. He published his first paper at 17."',
+      s7_meta:  'Parent of Class of 2023 · ★★★★★',
+
+      s8_field: 'Business & Finance',
+      s8_quote: '"Dr. Wu understood exactly what our daughter needed and helped her craft a story that was authentically hers. The results exceeded our expectations."',
+      s8_meta:  'Parent of Class of 2024 · ★★★★★',
+
+      s9_field: 'Environmental Science',
+      s9_quote: '"As a family new to the U.S. system, we felt completely lost. Keystone gave us a clear roadmap and held our hand through every step."',
+      s9_meta:  'Parent of Class of 2023 · ★★★★★',
+
       cta_h2:       'Your Child Could Be Our Next Success Story',
       cta_p:        'Schedule a free consultation and let\'s talk about what\'s possible.',
       cta_btn:      'Book Free Consultation',
@@ -782,6 +818,42 @@ const TRANSLATIONS = {
       featured_label:'精选故事',
       featured_quote: '"当我们第一次联系吴博士时，我们的女儿是10年级学生，成绩不错，但方向不明。等到申请时，她已完成了大学水平的科研，主导了影响200名同学的校园项目，写出了让我们感动落泪——是最好那种意义上——的文章。她以第一志愿被UC Berkeley录取。吴博士不仅帮她申请了大学，更帮她发现了自己是谁。"',
       featured_cite:  '2024届学生家长 · UC Berkeley，计算机科学',
+
+      s1_field: '计算机科学',
+      s1_quote: '"Keystone把我们的孩子当成自己的孩子一样对待。一步步的指导和文书辅导起到了决定性的作用。没有吴博士，我们根本无法完成整个申请过程。"',
+      s1_meta:  '2024届学生家长 · ★★★★★',
+
+      s2_field: '经济学',
+      s2_quote: '"我们从中国大陆来，对美国大学申请一无所知。吴博士用中英双语耐心讲解一切，而且随时可以通过微信联系。无价的帮助。"',
+      s2_meta:  '2023届学生家长 · ★★★★★',
+
+      s3_field: '医学预科',
+      s3_quote: '"我女儿的文书从平庸变得真正出色。她被梦想中的学校录取，如今在那里茁壮成长。每一分钱都值得。"',
+      s3_meta:  '2024届学生家长 · ★★★★★',
+
+      s4_field: '电气工程',
+      s4_quote: '"吴博士帮我儿子找到了让申请脱颖而出的科研方向。那一年他是为数不多被录取的国际学生之一。"',
+      s4_meta:  '2022届学生家长 · ★★★★★',
+
+      s5_field: '应用数学',
+      s5_quote: '"从开始和Keystone合作的那一刻起，我们就知道自己找到了专家。吴博士给予我儿子的个性化关注令人叹服。"',
+      s5_meta:  '2023届学生家长 · ★★★★★',
+
+      s6_field: '计算机科学',
+      s6_quote: '"Keystone帮助我们从零开始理解美国大学申请系统。我们的女儿如愿进入了她最心仪的CS院校。"',
+      s6_meta:  '2024届学生家长 · ★★★★★',
+
+      s7_field: '生物工程',
+      s7_quote: '"吴博士为我们对接的暑期科研项目彻底改变了我儿子的申请。他17岁就发表了第一篇论文。"',
+      s7_meta:  '2023届学生家长 · ★★★★★',
+
+      s8_field: '商业与金融',
+      s8_quote: '"吴博士完全理解我们女儿需要什么，帮助她打造了一个真正属于她的故事。结果超出了我们的期望。"',
+      s8_meta:  '2024届学生家长 · ★★★★★',
+
+      s9_field: '环境科学',
+      s9_quote: '"作为初到美国体系的家庭，我们完全不知所措。Keystone给了我们清晰的路线图，全程陪伴我们走过每一步。"',
+      s9_meta:  '2023届学生家长 · ★★★★★',
 
       cta_h2:       '您的孩子可以成为下一个成功故事',
       cta_p:        '预约免费咨询，让我们谈谈一切可能。',
