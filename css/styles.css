@@ -1142,7 +1142,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
   object-fit: cover;
 }
 .wechat-text { font-size: 0.85rem; color: var(--muted); }
-.wechat-text strong { display: block; color: var(--text); font-size: 0.95rem; margin-bottom: 2px; }
+.wechat-text span { display: block; margin-top: 6px; }
+.wechat-text strong { color: var(--text); font-size: 0.95rem; margin-right: 4px; }
 
 /* ── CTA BANNER (warm teal, personal) ─────────────────────── */
 .cta-banner {
@@ -1240,6 +1241,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08); }
   border: 1px solid var(--teal);
   border-radius: var(--r-pill);
   padding: 3px 12px;
+  margin-left: 4px;
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--teal);

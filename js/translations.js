@@ -458,8 +458,8 @@ const TRANSLATIONS = {
       form_success:   '✓ Thank you! We\'ll be in touch within 24 hours.',
       form_wechat_note: 'Or contact us directly via WeChat:',
 
-      wechat_label:   'WeChat: janewu2237',
-      wechat_note:    'Copy the ID above and search in WeChat → Add Contacts, or scan the QR code with WeChat\'s scanner.',
+      wechat_label:   'WeChat QR Code',
+      wechat_note:    'Open WeChat \u2192 Scan to add Dr. Wu',
 
       info_label:     'Availability',
       info_h3:        'What to Expect',
@@ -947,8 +947,8 @@ const TRANSLATIONS = {
       form_success:   '✓ 感谢您的咨询！我们将在24小时内与您联系。',
       form_wechat_note: '或直接通过微信联系我们：',
 
-      wechat_label:   '微信：janewu2237',
-      wechat_note:    '复制上方微信号，在微信中搜索添加，或用微信扫一扫扫描二维码',
+      wechat_label:   '微信二维码',
+      wechat_note:    '打开微信 \u2192 扫一扫即可添加吴博士',
 
       info_label:     '服务说明',
       info_h3:        '您可以期待什么',
