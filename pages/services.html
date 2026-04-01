@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — Keystone Consulting LLC</title>
   <meta name="description" content="Comprehensive U.S. university admissions services: school planning, essay coaching, interview prep, summer programs, and more. Personalized for each student." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
@@ -12,7 +15,7 @@
 <div id="nav-root"></div>
 
 <!-- ── COMPACT HERO ───────────────────────────────────────── -->
-<section class="hero-compact">
+<section class="hero-compact hero-compact--center">
   <div class="hero-bg"></div>
   <div class="container hero-compact-inner">
     <div class="reveal">
@@ -23,8 +26,61 @@
   </div>
 </section>
 
+<!-- ── SERVICE HUB ─────────────────────────────────────────── -->
+<section class="section section--white" id="all-services">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="label" data-i18n="services.hub_label">Our Services</span>
+      <h2 data-i18n-html="services.hub_h2">Five Pathways to <span class="gold">Student Success</span></h2>
+    </div>
+    <div class="service-hub-grid">
+
+      <div class="service-hub-card reveal">
+        <div class="hub-accent"></div>
+        <div class="hub-num">01</div>
+        <h3 data-i18n="services.hub1_title">College Admissions Consulting</h3>
+        <p data-i18n="services.hub1_body">Our flagship service: personalized strategy for 9th through 12th graders targeting top U.S. universities. Essays, interviews, extracurriculars, and research opportunities.</p>
+        <a href="#admissions" class="hub-link" data-i18n="services.hub1_link">Learn More &rarr;</a>
+      </div>
+
+      <div class="service-hub-card reveal">
+        <div class="hub-accent"></div>
+        <div class="hub-num">02</div>
+        <h3 data-i18n="services.hub2_title">Transfer Strategy & Placement</h3>
+        <p data-i18n="services.hub2_body">Community college to UC, lower UC to top UC, or any school to top 10. A complete roadmap for transfer students who want a second chance at their dream program.</p>
+        <a href="./transfer.html" class="hub-link" data-i18n="services.hub2_link">Learn More &rarr;</a>
+      </div>
+
+      <div class="service-hub-card reveal">
+        <div class="hub-accent"></div>
+        <div class="hub-num">03</div>
+        <h3 data-i18n="services.hub3_title">Undergraduate 4-Year Success Planning</h3>
+        <p data-i18n="services.hub3_body">Course strategy, major decisions, internship recruiting, and career readiness. A dynamic roadmap from freshman orientation through graduation.</p>
+        <a href="./undergrad-planning.html" class="hub-link" data-i18n="services.hub3_link">Learn More &rarr;</a>
+      </div>
+
+      <div class="service-hub-card reveal">
+        <div class="hub-accent"></div>
+        <div class="hub-num">04</div>
+        <h3 data-i18n="services.hub4_title">US + UK Dual-Track Application</h3>
+        <p data-i18n="services.hub4_body">For high-achieving students in mainland China targeting elite programs in both the United States and the United Kingdom simultaneously.</p>
+        <a href="./dual-track.html" class="hub-link" data-i18n="services.hub4_link">Learn More &rarr;</a>
+      </div>
+
+      <div class="service-hub-card reveal">
+        <div class="hub-accent"></div>
+        <div class="hub-num">05</div>
+        <h3 data-i18n="services.hub5_title">Life Skills & Professional Development</h3>
+        <p data-i18n="services.hub5_body">Productivity systems, AI literacy, time management, and entrepreneurial thinking. The real-world skills that set students apart after admission.</p>
+        <a href="./life-skills.html" class="hub-link" data-i18n="services.hub5_link">Learn More &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ── INTRODUCTION ────────────────────────────────────────── -->
-<section class="section section--white">
+<section class="section section--cream">
   <div class="container">
     <div class="grid-2" style="align-items:center;">
       <div class="reveal">
@@ -38,21 +94,21 @@
       </div>
       <div class="reveal">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-          <div style="background:var(--navy); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
-            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--gold); line-height:1;">100%</div>
-            <div style="font-size:0.78rem; color:rgba(255,255,255,0.5); margin-top:6px; letter-spacing:0.04em;" data-i18n="home.stat1_label">Admission Success Rate</div>
+          <div style="background:var(--teal); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
+            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--white); line-height:1;">100%</div>
+            <div style="font-size:0.78rem; color:rgba(255,255,255,0.6); margin-top:6px; letter-spacing:0.04em;" data-i18n="home.stat1_label">Admission Success Rate</div>
           </div>
-          <div style="background:var(--gold); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
-            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--navy); line-height:1;">17+</div>
-            <div style="font-size:0.78rem; color:rgba(11,31,58,0.65); margin-top:6px; letter-spacing:0.04em;" data-i18n="home.stat2_label">Years of Experience</div>
+          <div style="background:var(--teal-glass); border:1px solid rgba(43,95,92,0.15); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
+            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--teal); line-height:1;">17+</div>
+            <div style="font-size:0.78rem; color:var(--muted); margin-top:6px; letter-spacing:0.04em;" data-i18n="home.stat2_label">Years of Experience</div>
           </div>
-          <div style="background:var(--gold); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
-            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--navy); line-height:1;">500+</div>
-            <div style="font-size:0.78rem; color:rgba(11,31,58,0.65); margin-top:6px; letter-spacing:0.04em;" data-i18n="home.stat3_label">Students Advised</div>
+          <div style="background:var(--teal-glass); border:1px solid rgba(43,95,92,0.15); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
+            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--teal); line-height:1;">500+</div>
+            <div style="font-size:0.78rem; color:var(--muted); margin-top:6px; letter-spacing:0.04em;" data-i18n="home.stat3_label">Students Advised</div>
           </div>
-          <div style="background:var(--navy); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
-            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--gold); line-height:1;">50+</div>
-            <div style="font-size:0.78rem; color:rgba(255,255,255,0.5); margin-top:6px; letter-spacing:0.04em;" data-i18n="about.cred4_label">Universities Represented</div>
+          <div style="background:var(--teal); border-radius:var(--r-md); padding:28px 20px; text-align:center;">
+            <div style="font-family:var(--serif); font-size:2.4rem; color:var(--white); line-height:1;">50+</div>
+            <div style="font-size:0.78rem; color:rgba(255,255,255,0.6); margin-top:6px; letter-spacing:0.04em;" data-i18n="about.cred4_label">Universities Represented</div>
           </div>
         </div>
       </div>
@@ -60,11 +116,11 @@
   </div>
 </section>
 
-<!-- ── SERVICES DETAIL ─────────────────────────────────────── -->
-<section class="section section--cream" id="services-detail">
+<!-- ── COLLEGE ADMISSIONS DETAIL ───────────────────────────── -->
+<section class="section section--white" id="admissions">
   <div class="container">
     <div class="reveal text-center">
-      <span class="label" data-i18n="services.svc_label">Six Core Services</span>
+      <span class="label" data-i18n="services.svc_label">College Admissions</span>
       <h2 data-i18n-html="services.svc_h2">Six Pillars of <span class="gold">Student Success</span></h2>
     </div>
     <div class="services-detail-grid">

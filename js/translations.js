@@ -18,7 +18,12 @@ const TRANSLATIONS = {
       contact: 'Contact',
       cta:     'Free Consultation',
       lang_switch: '中文',
-      lang_switch_long: '切换到中文'
+      lang_switch_long: '切换到中文',
+      svc_admissions: 'College Admissions',
+      svc_transfer:   'Transfer Strategy',
+      svc_undergrad:  'Undergrad Planning',
+      svc_dualtrack:  'US + UK Dual-Track',
+      svc_lifeskills: 'Life Skills',
     },
 
     home: {
@@ -61,20 +66,18 @@ const TRANSLATIONS = {
       ai_question:  '"In the AI era, are you still only buying real estate in good school districts, enrolling in coding bootcamps, and saving education funds — without teaching your child the skills AI can never take away?"',
 
       svc_label:    'What We Do',
-      svc_h2:       'Comprehensive <span class="gold">Admissions Support</span>',
-      svc1_title:   'Dream School Planning',
-      svc1_body:    'Best-fit universities and majors tailored to your child\'s strengths, goals, and academic profile.',
-      svc2_title:   'Standout Applications',
-      svc2_body:    'Compelling narratives that differentiate your child from thousands of applicants.',
-      svc3_title:   'Essay & Interview Coaching',
-      svc3_body:    'Personal statements, supplemental essays, and interview prep that leave a lasting impression.',
-      svc4_title:   'Academic & Activities Strategy',
-      svc4_body:    'Course selection, extracurriculars, volunteering, and internship guidance for a competitive profile.',
-      svc5_title:   'Summer & Research Programs',
-      svc5_body:    'Exclusive access to research opportunities at UC Berkeley, UCLA, and Stanford.',
-      svc6_title:   'Competitions & Hackathons',
-      svc6_body:    'Real-world competitions and hackathons that add distinction to any application.',
-      svc_more:     'Learn More \u2192',
+      svc_h2:       'From First Application to <span class="gold">Career Launch</span>',
+      svc_sub:      'Most consultants stop at acceptance letters. We guide students from high school through college and into their careers.',
+      svc1_title:   'College Admissions Consulting',
+      svc1_body:    'Dream school selection, essay coaching, interview prep, extracurricular strategy, and research placements. The complete admissions package.',
+      svc2_title:   'Transfer Strategy',
+      svc2_body:    'Community college to UC, lower-ranked to top 20, or any school to your dream program. We build the roadmap and execute it.',
+      svc3_title:   '4-Year Undergrad Planning',
+      svc3_body:    'Course planning, career roadmap, grad school prep, and AI-era skill building. A semester-by-semester plan for college success.',
+      svc4_title:   'US + UK Dual-Track',
+      svc4_body:    'Apply to American and British universities simultaneously. Two systems, one coherent strategy, bilingual support throughout.',
+      svc5_title:   'Life Skills & Professional Development',
+      svc5_body:    'Productivity, AI literacy, time management, and professional communication. The real-world skills that turn good students into successful adults.',
       svc_all:      'View All Services \u2192',
 
       process_label:'How It Works',
@@ -118,11 +121,30 @@ const TRANSLATIONS = {
       t3_body:      'My daughter\'s essays went from average to truly remarkable after working with the Keystone team. She was accepted to her dream school and is thriving. Worth every penny.',
       t3_author:    'Parent of a student admitted Class of 2024',
       t3_meta:      'Columbia University · Premed · Taiwan · 2024',
+      mentor_label:   'From Student to Mentor',
+      mentor_h2:      'Aaron Chang',
+      mentor_title:   'UCLA Computer Science, Class of 2026',
+      mentor_p1:      'Aaron is a product of Keystone\'s system. Guided by Dr. Wu from middle school onward, he was admitted to UCLA as a Computer Science major and went on to intern at Amazon Web Services, TikTok, and Google before accepting a full-time software engineering offer.',
+      mentor_p2:      'Along the way, he published machine learning research at COLM 2025 (one of the top AI conferences in the world), launched two businesses, and built the website you are reading right now. His journey is proof that the Keystone method works: not just for getting into college, but for thriving afterward.',
+      mentor_p3:      'Now Aaron works directly with Keystone students as a near-peer mentor. He brings firsthand knowledge of what it takes to succeed at a top university, land competitive internships, and build a career in tech. For students, he is someone who has been exactly where they are and can show them what comes next.',
+      mentor_cred1:   'UCLA CS \'26',
+      mentor_cred2:   'AWS / TikTok / Google',
+      mentor_cred3:   'COLM 2025 Research',
+      mentor_cred4:   'Entrepreneur',
+      mentor_cred5:   'Near-Peer Mentor',
+      mentor_badge:   'Near-Peer Mentor & Advisor',
+      mentor_link:    'Explore Life Skills Program \u2192',
+
       case_cta:     'Read more stories \u2192',
-      case1_heading:'Jason \u00b7 UC Berkeley, Data Science \u00b7 Class of 2029',
-      case1_p1:     'When Jason came to Keystone in 8th grade, his GPA was below average for competitive universities. He had no standout awards, minimal extracurriculars, and no clear narrative for admissions officers. A conventional application would have been lost in the pile.',
-      case1_p2:     'Dr. Wu identified the NASA Space Apps Challenge as the right fit for Jason\'s emerging interest in data science. Keystone recruited and organized a team of fellow students, then coached them through every round \u2014 project framing, presentation, technical execution. The result: a top 10% finish out of 10,000+ teams worldwide. That competition became the centerpiece of Jason\'s application, demonstrating initiative, teamwork, and real-world problem-solving in a way GPA alone never could.',
-      case1_p3:     'With essay and interview coaching, Jason learned to articulate his growth from a quiet student into a competition leader. That compelling arc resonated with UC Berkeley\'s admissions committee. He was admitted to the Data Science program, Class of 2029.',
+      case1_heading:'Student A \u00b7 UC Berkeley, Data Science \u00b7 Class of 2029',
+      case1_p1:     'When Student A came to Keystone in 8th grade, their GPA was below average for competitive universities. They had no standout awards, minimal extracurriculars, and no clear narrative for admissions officers. A conventional application would have been lost in the pile.',
+      case1_p2:     'Dr. Wu identified the NASA Space Apps Challenge as the right fit for the student\'s emerging interest in data science. Keystone recruited and organized a team of fellow students, then coached them through every round: project framing, presentation, technical execution. The result was a top 10% finish out of 10,000+ teams worldwide. That competition became the centerpiece of the application, demonstrating initiative, teamwork, and real-world problem-solving in a way GPA alone never could.',
+      case1_p3:     'With essay and interview coaching, Student A learned to articulate their growth from a quiet student into a competition leader. That compelling arc resonated with UC Berkeley\'s admissions committee. They were admitted to the Data Science program, Class of 2029.',
+
+      case2_heading:'Student B \u00b7 Georgia Tech, Computer Science \u00b7 Class of 2030',
+      case2_p1:     'Student B arrived at Keystone with minimal extracurriculars and essays that lacked direction. There was no compelling story for admissions officers to latch onto, and the student\'s profile blended in with thousands of other applicants.',
+      case2_p2:     'Dr. Wu saw potential and got to work. She identified the NASA Space Apps Challenge as a strategic fit, helped the student build a team, and coached them through every stage of the competition. Beyond competitions, Keystone restructured the student\'s entire application narrative, turning a scattered profile into a focused story of growth, initiative, and technical ambition.',
+      case2_p3:     'The results spoke for themselves: admitted to Georgia Tech Computer Science, UC Berkeley (Letters & Science), University of Washington Seattle CS, UW-Madison CS, and UCSB Computer Science, among others. What started as an unremarkable application became a portfolio of genuine accomplishments that top programs could not ignore.',
 
       faq_label:    'Common Questions',
       faq_h2:       'Frequently Asked <span class="gold">Questions</span>',
@@ -149,8 +171,26 @@ const TRANSLATIONS = {
 
     services: {
       hero_label:   'What We Offer',
-      hero_h1:      'Comprehensive Admissions Support',
-      hero_sub:     'From early planning to final decision day — we guide your child every step of the way.',
+      hero_h1:      'Comprehensive Student Support',
+      hero_sub:     'From first application to career launch, and everywhere in between.',
+
+      hub_label:    'Our Services',
+      hub_h2:       'Five Pathways to <span class="gold">Student Success</span>',
+      hub1_title:   'College Admissions Consulting',
+      hub1_body:    'Our flagship service: personalized strategy for 9th through 12th graders targeting top U.S. universities. Essays, interviews, extracurriculars, and research opportunities.',
+      hub1_link:    'Learn More \u2192',
+      hub2_title:   'Transfer Strategy & Placement',
+      hub2_body:    'Community college to UC, lower UC to top UC, or any school to top 10. A complete roadmap for transfer students who want a second chance at their dream program.',
+      hub2_link:    'Learn More \u2192',
+      hub3_title:   'Undergraduate 4-Year Success Planning',
+      hub3_body:    'Course strategy, major decisions, internship recruiting, and career readiness. A dynamic roadmap from freshman orientation through graduation.',
+      hub3_link:    'Learn More \u2192',
+      hub4_title:   'US + UK Dual-Track Application',
+      hub4_body:    'For high-achieving students in mainland China targeting elite programs in both the United States and the United Kingdom simultaneously.',
+      hub4_link:    'Learn More \u2192',
+      hub5_title:   'Life Skills & Professional Development',
+      hub5_body:    'Productivity systems, AI literacy, time management, and entrepreneurial thinking. The real-world skills that set students apart after admission.',
+      hub5_link:    'Learn More \u2192',
 
       intro_label:  'Our Approach',
       intro_h2:     'Personalized, Expert-Led Advising',
@@ -207,7 +247,7 @@ const TRANSLATIONS = {
       pkg_sub:      'Every student\'s situation is different. Contact us for a free consultation and we\'ll recommend the package that\'s right for your child.',
 
       pkg1_name:    'Essentials',
-      pkg1_desc:    'Focused support for students in 11th–12th grade who need targeted help with key application components.',
+      pkg1_desc:    'Focused college admissions support for 11th and 12th graders.',
       pkg1_f1:      'Essay coaching (personal statement)',
       pkg1_f2:      'College list review',
       pkg1_f3:      'Application strategy session',
@@ -215,20 +255,20 @@ const TRANSLATIONS = {
       pkg1_f5:      'Email support',
 
       pkg2_name:    'Comprehensive',
-      pkg2_desc:    'Full-cycle support from junior year through decision day. Ideal for most families.',
+      pkg2_desc:    'Full-cycle admissions, transfer strategy, and undergraduate planning. Ideal for most families.',
       pkg2_badge:   'Most Popular',
       pkg2_f1:      'Everything in Essentials',
       pkg2_f2:      'All supplemental essays',
-      pkg2_f3:      'Activities list strategy',
-      pkg2_f4:      'Summer program access',
+      pkg2_f3:      'Transfer strategy consultation',
+      pkg2_f4:      'Undergrad success planning',
       pkg2_f5:      'WeChat + priority support',
       pkg2_f6:      'Financial aid guidance',
 
       pkg3_name:    'Elite',
-      pkg3_desc:    'Multi-year, fully comprehensive support starting in 9th or 10th grade for maximum results.',
+      pkg3_desc:    'All five services: admissions, transfer, undergrad planning, dual-track, and life skills. The complete Keystone experience.',
       pkg3_f1:      'Everything in Comprehensive',
-      pkg3_f2:      'Multi-year academic planning',
-      pkg3_f3:      'Competition and hackathon access',
+      pkg3_f2:      'US + UK dual-track application',
+      pkg3_f3:      'Life skills & professional development',
       pkg3_f4:      'Research program placement',
       pkg3_f5:      'Dedicated advisor relationship',
       pkg3_f6:      '24/7 WeChat + video support',
@@ -273,6 +313,19 @@ const TRANSLATIONS = {
       team_l3:      'Successful alumni from Stanford, Harvard, MIT, UC Berkeley, and UCLA who provide mentorship',
       team_l4:      'Academic specialists in STEM, humanities, business, pre-med, and pre-law',
       team_p2:      'This network gives Keystone students an unparalleled insider advantage — guidance grounded in real admissions experience, not guesswork.',
+
+      mentor_label:  'Near-Peer Mentor',
+      mentor_h2:     'Aaron Chang',
+      mentor_title:  'UCLA Computer Science, Class of 2026',
+      mentor_p1:     'Aaron is the living proof of the Keystone method. Guided by Dr. Wu from middle school, he was admitted to UCLA as a Computer Science major and went on to intern at Amazon Web Services, TikTok, and Google before accepting a full-time software engineering offer.',
+      mentor_p2:     'He published machine learning research at COLM 2025, one of the top AI conferences in the world, launched two businesses, and built the website you are reading right now. His journey demonstrates that Keystone\'s impact extends far beyond college admissions.',
+      mentor_p3:     'Now Aaron works directly with Keystone students as a near-peer mentor, leading the Life Skills and Professional Development program. He brings firsthand knowledge of succeeding at a top university, landing competitive internships, and building a career in tech. For students, he is someone who has been exactly where they are and can show them what comes next.',
+      mentor_cred1:  'UCLA CS \'26',
+      mentor_cred2:  'AWS / TikTok / Google',
+      mentor_cred3:  'COLM 2025 Research',
+      mentor_cred4:  'Entrepreneur',
+      mentor_cred5:  'Near-Peer Mentor',
+      mentor_link:   'Explore Life Skills Program \u2192',
 
       timeline_label:'Our Story',
       timeline_h2:  'Building a Legacy of <span class="gold">Student Success</span>',
@@ -365,6 +418,10 @@ const TRANSLATIONS = {
       s9_field: 'Environmental Science',
       s9_quote: '"As a family new to the U.S. system, we felt completely lost. Keystone gave us a clear roadmap and held our hand through every step."',
       s9_meta:  'Parent of Class of 2023 · ★★★★★',
+
+      sb_field: 'Computer Science',
+      sb_quote: '"Our daughter had no direction and minimal activities. Dr. Wu built her entire profile from scratch, including NASA Space Apps. She was admitted to Georgia Tech CS, UC Berkeley, UW Seattle CS, and more. The transformation was incredible."',
+      sb_meta:  'Parent of Class of 2030 · ★★★★★',
 
       cta_h2:       'Your Child Could Be Our Next Success Story',
       cta_p:        'Schedule a free consultation and let\'s talk about what\'s possible.',
@@ -484,15 +541,124 @@ const TRANSLATIONS = {
     footer: {
       tagline:          'Helping students from China and around the world gain admission to their dream U.S. universities since 2008. 100% success rate. Bilingual support.',
       services_heading: 'Services',
-      s1: 'University Planning',
-      s2: 'Application Strategy',
-      s3: 'Essay Coaching',
-      s4: 'Interview Prep',
-      s5: 'Summer Programs',
+      s1: 'College Admissions',
+      s2: 'Transfer Strategy',
+      s3: 'Undergrad Planning',
+      s4: 'US + UK Dual-Track',
+      s5: 'Life Skills',
       contact_heading: 'Contact',
       copyright:    '© 2025 Keystone Consulting LLC. All rights reserved.',
       location:     'Based in Los Angeles, CA · Serving Families Worldwide',
     },
+
+    /* ── NEW SERVICE PAGES (EN) ──────────────────────────── */
+    transfer: {
+      hero_label:   'Service',
+      hero_h1:      'Transfer Strategy & Placement',
+      hero_sub:     'Community College to UC. Lower UC to Top UC. Any School to Top 10 / Top 20.',
+      intro_p1:     'Disappointed with your undergraduate admission results? A transfer is still very much on the table.',
+      intro_p2:     'But without a clear understanding of how the transfer process actually works, most families end up repeating the same mistakes, just one year later. What no one tells you: IGETC eligibility, TAG application windows, and major-specific articulation requirements are often locked in during your very first semester at community college, long before most families even begin thinking seriously about transfer strategy.',
+      intro_p3:     'Keystone has spent 17+ years navigating the U.S. university admissions landscape. We have seen too many hardworking students get blindsided by a process that looks straightforward on the surface but is governed by rules most families never see coming. Transfer admission is not a simplified version of freshman admission. It operates on completely different rules, timelines, and evaluation criteria. Families who treat it like a standard application almost always pay the price.',
+      intro_p4:     'Dr. Wu is personally involved with every transfer student, building a 12 to 18-month complete roadmap that leaves no blind spots.',
+      list_label:   'What We Do for You',
+      list1:        'Match target schools and majors to your real admission probability, not wishful thinking',
+      list2:        'Benchmark your GPA against actual transfer admit data for your specific major and campus',
+      list3:        'Build a course plan that satisfies articulation requirements while protecting your flexibility',
+      list4:        'Assess TAG/TAP eligibility and create an immediate action plan if you qualify',
+      list5:        'Coach your UC Personal Insight Questions (PIQs) to authentically reflect who you are right now, not who you were in high school',
+      list6:        'Manage every deadline on your behalf so you are never caught off guard by a window that quietly closed',
+      who_label:    'Who This Is For',
+      who_p:        'Community college students targeting UCLA, UC Berkeley, or UCSD. Students at UC Santa Cruz, UC Riverside, or UC Merced aiming to move up to a top campus. And any undergraduate at any institution who wants a genuine shot at a top-10 or top-20 program.',
+      cta_h2:       'The Transfer Window Is Narrower Than Most Families Realize',
+      cta_p:        'Book a free consultation with Dr. Wu to find out exactly where you stand.',
+      cta_btn:      'Book Free Consultation',
+    },
+
+    undergrad: {
+      hero_label:   'Service',
+      hero_h1:      'Undergraduate 4-Year Success Planning',
+      hero_sub:     'Course Strategy. Major Decisions. Career Readiness. AI-Era Advantage.',
+      intro_p1:     'Getting into your dream university is only the beginning.',
+      intro_p2:     'What happens in those four years determines everything: whether you land that internship offer, whether you get into your target company, whether you are admitted to a top Master\'s or PhD program, whether you are the kind of professional who works with AI rather than being replaced by it, or whether you walk across the graduation stage with a diploma and no clear idea of what comes next.',
+      intro_p3:     'The students who truly succeed after college are not smarter than everyone else. They simply started planning earlier.',
+      intro_p4:     'Recruiting cycles at top tech companies and consulting firms open before you even set foot on campus. The most valuable research opportunities fill up while you are still settling into your dorm. Most students do not discover this until junior or even senior year, by which point the best doors have already quietly closed.',
+      intro_p5:     'Keystone\'s Undergraduate Planning service is built on Dr. Wu\'s 20+ years of hands-on advising experience. We give every student a career- and research-driven, AI-embracing dynamic roadmap, one that begins before freshman orientation and evolves all the way through graduation.',
+      list_label:   'What\'s Included',
+      list1:        '<strong>Course & major planning</strong>: A 4-year academic plan aligned with your career goals and graduate school ambitions, including smart minor selection and a GPA protection strategy',
+      list2:        '<strong>Major adjustment guidance</strong>: Data-driven support for knowing when and how to switch majors, pursue a double major, or add a strategic minor without wasting time or losing momentum',
+      list3:        '<strong>Graduate school planning</strong>: PhD vs. Master\'s decision framework, research experience building, faculty advisor network access, and staggered application timing so you are never scrambling at the last minute',
+      list4:        '<strong>Career & internship roadmap</strong>: Recruiting timelines, resume and LinkedIn development, professional network building, and hands-on job search tool fluency',
+      list5:        '<strong>AI-era competitiveness</strong>: A personalized roadmap for layering AI collaboration skills on top of domain expertise, including project portfolio development and competition strategy',
+      list6:        '<strong>5C Core Competency Development</strong>: Curiosity, Courage, Creativity, Compassion, and Communication: the five human qualities AI can never replicate, woven into every semester\'s action plan',
+      list7:        '<strong>Passion & purpose alignment</strong>: Frameworks to help students identify the intersection of what they love, what they are good at, and what the world needs, so their choices are driven by direction, not default',
+      list8:        '<strong>Long-term career strategy</strong>: From first internship to first full-time offer, and the personal brand that carries students through every stage beyond',
+      edge_label:   'Keystone\'s Edge',
+      edge_p:       'Our advisor network includes industry professionals from Google, Amazon, TikTok, and NASA, giving us real-world insight into what actually matters at the undergraduate stage, far beyond what any standard academic advisor can offer.',
+      who_label:    'Who This Is For',
+      who_p:        'Incoming freshmen who want to start strong from Day One. Current undergraduates who feel behind or without direction. Students weighing industry careers against graduate school. And families who want a structured, accountable planning system that goes far beyond what a campus counselor can provide.',
+      cta_h2:       'Most Students React. Keystone Students Plan.',
+      cta_p:        'Book a free consultation to see what your child\'s 4-year roadmap looks like.',
+      cta_btn:      'Book Free Consultation',
+    },
+
+    dualtrack: {
+      hero_label:   'Service',
+      hero_h1:      'US + UK Dual-Track Application',
+      hero_sub:     'For high-achieving students in mainland China targeting two of the world\'s most prestigious education systems.',
+      intro_p1:     'The U.S. and UK university admissions systems are not just geographically apart. They are philosophically opposite in what they evaluate.',
+      intro_p2:     'The U.S. Common App asks: Who are you as a person? The UK UCAS personal statement asks: Why are you academically suited for this subject?',
+      intro_p3:     'Submit the same essay to both, and you will almost certainly be rejected by both.',
+      intro_p4:     'Most students in China end up with one of two problems: a consultant who knows the U.S. system well but has only surface-level familiarity with UK admissions, or a UK-focused agency that lacks the depth needed to compete at the top of the American market. Consultants who can genuinely command both systems, and integrate them into a single coherent strategy, are rare.',
+      intro_p5:     'Keystone is US-based, with deep expertise in UK admissions built specifically for Chinese students. Dr. Wu and her advisory team run both tracks simultaneously: one unified student story, told in two completely different voices, to two completely different audiences.',
+      list_label:   'What We Do for You',
+      list1:        '<strong>Dual school list strategy</strong>: U.S. targets spanning Ivy League, top liberal arts colleges, and top-20 research universities; UK targets covering Oxford, Cambridge, and Russell Group programs tailored to your subject area',
+      list2:        '<strong>Coordinated timeline management</strong>: Oxford/Cambridge deadline of October 15, all other UK institutions by January 31, running in parallel with U.S. EA/ED/RD cycles without conflict',
+      list3:        '<strong>Full U.S. application suite</strong>: Common App personal statement, school-specific supplements (Why This School, Why This Major), and activities list optimization',
+      list4:        '<strong>UK UCAS personal statement</strong>: Academically rigorous, subject-focused, and calibrated precisely to how UK admissions tutors actually read and evaluate candidates',
+      list5:        '<strong>Oxford & Cambridge interview preparation</strong>: The UK admissions interview tests subject-depth reasoning, not personality; we prepare students for the exact format they will face',
+      list6:        '<strong>Offer decision strategy</strong>: When letters arrive from both sides of the Atlantic, we help families evaluate program quality, career outcomes, financial considerations, and long-term fit with clarity and confidence',
+      list7:        '<strong>Full bilingual support</strong>: Dr. Wu communicates fluently in both English and Chinese, with WeChat availability and time-zone-friendly scheduling designed for mainland China families',
+      who_label:    'Who This Is For',
+      who_p:        'High-achieving students in mainland China with a strong academic identity who want to genuinely unlock elite programs in both countries, not treating the UK as a safety net, but pursuing both tracks seriously to maximize total outcomes.',
+      cta_h2:       'The October 15 Oxbridge Deadline Arrives Faster Than Families Expect',
+      cta_p:        'Add Dr. Wu on WeChat now (janewu2237) to start building your dual-track strategy.',
+      cta_btn:      'Book Free Consultation',
+    },
+
+    lifeskills: {
+      hero_label:   'Service',
+      hero_h1:      'Life Skills & Professional Development',
+      hero_sub:     'Your child will learn to manage themselves. We build real habits with real systems.',
+      intro_label:  'Beyond Admissions',
+      intro_h2:     'The Skills That Matter <span class="gold">After</span> Acceptance',
+      intro_p1:     'Getting into a great university is a milestone, not a finish line. The students who thrive in college and beyond are the ones who know how to manage their time, communicate professionally, think critically about technology, and take ownership of their own growth.',
+      intro_p2:     'Keystone\'s Life Skills program is designed for students who have the talent but need the systems. Led by Aaron Chang, a UCLA Computer Science graduate who has interned at AWS, TikTok, and Google, this program delivers practical, hands-on coaching that students actually use every day.',
+      mentor_label: 'Your Mentor',
+      mentor_h2:    'Aaron Chang',
+      mentor_title: 'UCLA Computer Science, Class of 2026',
+      mentor_p1:    'Aaron learned these skills the hard way: through trial and error at one of the most competitive computer science programs in the country, through recruiting cycles at the world\'s top tech companies, and through building two businesses from scratch. Now he teaches them to your child so they do not have to figure it out alone.',
+      mentor_p2:    'As a near-peer mentor, Aaron connects with students in a way that parents and traditional advisors cannot. He has been exactly where they are, and he knows what it takes to get where they want to go.',
+      skill1_title: 'Productivity Systems',
+      skill1_body:  'Google Calendar, Notion, task management workflows. We do not just recommend tools; we set them up together and build habits that stick.',
+      skill2_title: 'AI Literacy',
+      skill2_body:  'How to use Claude, ChatGPT, and other AI tools responsibly and effectively. When to lean on AI, when to think for yourself, and how to stay ahead of the curve.',
+      skill3_title: 'Time Management & Self-Discipline',
+      skill3_body:  'Scheduling, deadlines, prioritization, and accountability. The foundational habits that separate students who coast from students who excel.',
+      skill4_title: 'Entrepreneurial Thinking',
+      skill4_body:  'Business basics, initiative, creative problem-solving, and giving back to family. Skills that serve students whether they start a company or join one.',
+      skill5_title: 'Communication & Professional Presence',
+      skill5_body:  'Email etiquette, networking, presentations, and personal branding. The soft skills that open doors in every industry.',
+      audience_label: 'Who This Is For',
+      audience_h2:   'Built for Students <span class="gold">Ready for More</span>',
+      audience1_title:'The High Achiever Who Needs Direction',
+      audience1_body: 'Your child gets straight A\'s but freezes when asked what they want to do after graduation. They excel in the classroom but have never managed a project, sent a professional email, or built anything outside of a homework assignment. This program turns academic talent into real-world capability: productivity systems, professional communication, and the self-management skills that separate students who thrive from students who just survive.',
+      audience2_title:'The Specialist Who Needs to Be Well-Rounded',
+      audience2_body: 'Your child is brilliant in one area but underdeveloped in others. Maybe they can code but cannot hold a conversation in a meeting, or they write beautifully but have no sense of time management. We help students close the gaps that hold them back: AI literacy, entrepreneurial thinking, networking, and the everyday life skills that universities and employers expect but no one teaches.',
+      cta_h2:       'Start Building Real-World Skills Today',
+      cta_p:        'Book a free consultation to learn how Aaron and the Keystone team can prepare your child for life beyond the classroom.',
+      cta_btn:      'Book Free Consultation',
+    },
+
   },
 
   /* ── CHINESE ──────────────────────────────────────────── */
@@ -507,7 +673,12 @@ const TRANSLATIONS = {
       contact: '联系我们',
       cta:     '免费咨询',
       lang_switch: 'EN',
-      lang_switch_long: 'Switch to English'
+      lang_switch_long: 'Switch to English',
+      svc_admissions: '升学咨询', // TODO: Review Chinese translation
+      svc_transfer:   '转学策略', // TODO: Review Chinese translation
+      svc_undergrad:  '本科规划', // TODO: Review Chinese translation
+      svc_dualtrack:  '美英双申', // TODO: Review Chinese translation
+      svc_lifeskills: '生活技能', // TODO: Review Chinese translation
     },
 
     home: {
@@ -550,20 +721,18 @@ const TRANSLATIONS = {
       ai_question:  '"AI时代，家长还只知道买学区房、报编程班、存教育基金……却没教子女AI永远抢不走的真本事吗？"',
 
       svc_label:    '我们的服务',
-      svc_h2:       '全方位<span class="gold">升学申请支持</span>',
-      svc1_title:   '梦想院校规划',
-      svc1_body:    '精准匹配最适合的大学和专业方向，助力实现学业与职业目标。',
-      svc2_title:   '脱颖而出的申请',
-      svc2_body:    '打造有力的申请叙事，从数万申请者中脱颖而出。',
-      svc3_title:   '文书与面试辅导',
-      svc3_body:    '个人陈述、补充文书和面试准备，给招生官留下深刻印象。',
-      svc4_title:   '学业与活动策略',
-      svc4_body:    '课程选择、课外活动、志愿服务和实习指导，全面提升竞争力。',
-      svc5_title:   '暑期与科研项目',
-      svc5_body:    '独家提供UC Berkeley、UCLA和Stanford的暑期和科研机会。',
-      svc6_title:   '竞赛与黑客马拉松',
-      svc6_body:    '真实竞赛和黑客马拉松，为申请增添独特亮点。',
-      svc_more:     '了解更多 \u2192',
+      svc_h2:       '从升学申请到<span class="gold">职业起步</span>',
+      svc_sub:      '大多数顾问止步于录取通知书。我们引导学生从高中走过大学，直到事业起步。',
+      svc1_title:   '大学升学咨询',
+      svc1_body:    '梦想院校定位、文书辅导、面试准备、课外活动策略和科研推荐。全套升学服务。',
+      svc2_title:   '转学策略规划',
+      svc2_body:    '从社区大学到UC，从普通院校到Top 20，或任何学校到梦想专业。我们制定路线图并执行到位。',
+      svc3_title:   '本科四年规划',
+      svc3_body:    '选课规划、职业路线图、研究生院准备和AI时代技能培养。逐学期的大学成功计划。',
+      svc4_title:   '美英双轨申请',
+      svc4_body:    '同时申请美国和英国大学。两个体系，一个连贯策略，全程双语支持。',
+      svc5_title:   '生活技能与职业发展',
+      svc5_body:    '生产力工具、AI素养、时间管理和职业沟通。将优秀学生培养成成功成年人的实用技能。',
       svc_all:      '查看全部服务 \u2192',
 
       process_label:'我们的方法论',
@@ -607,11 +776,30 @@ const TRANSLATIONS = {
       t3_body:      '我女儿的文书经过Keystone团队的辅导后，从普通变得真正出彩。她被梦校录取，现在非常优秀。完全值得。',
       t3_author:    '已录取学生家长（2024届）',
       t3_meta:      'Columbia University · 预医学 · 台湾 · 2024',
+      mentor_label:   '从学生到导师', // TODO: Review Chinese translation
+      mentor_h2:      'Aaron Chang',
+      mentor_title:   'UCLA 计算机科学, 2026届', // TODO: Review Chinese translation
+      mentor_p1:      'Aaron是Keystone体系培养出的学生。在吴博士从中学开始的指导下，他被UCLA计算机科学专业录取，并先后在亚马逊云科技(AWS)、TikTok和谷歌实习，随后接受了全职软件工程师的工作邀请。', // TODO: Review Chinese translation
+      mentor_p2:      '在此过程中，他在COLM 2025（全球顶级AI学术会议之一）发表了机器学习研究论文，创办了两家公司，并亲手搭建了您正在浏览的这个网站。他的经历证明了Keystone方法的有效性：不仅帮助学生进入顶尖大学，更帮助他们在大学之后蓬勃发展。', // TODO: Review Chinese translation
+      mentor_p3:      '如今Aaron作为近距离导师直接与Keystone学生合作。他带来了在顶尖大学学习、获得竞争激烈的实习机会以及在科技行业发展事业的第一手经验。对学生而言，他正是曾经站在他们同样位置的人，能够向他们展示未来的方向。', // TODO: Review Chinese translation
+      mentor_cred1:   'UCLA CS \'26',
+      mentor_cred2:   'AWS / TikTok / Google',
+      mentor_cred3:   'COLM 2025 研究', // TODO: Review Chinese translation
+      mentor_cred4:   '创业者', // TODO: Review Chinese translation
+      mentor_cred5:   '近距离导师', // TODO: Review Chinese translation
+      mentor_badge:   '近距离导师与顾问', // TODO: Review Chinese translation
+      mentor_link:    '了解生活技能项目 \u2192', // TODO: Review Chinese translation
+
       case_cta:     '查看更多案例 \u2192',
-      case1_heading:'Jason \u00b7 UC Berkeley 数据科学 \u00b7 2029届',
-      case1_p1:     'Jason在八年级时来到Keystone，当时他的GPA低于顶尖大学的平均水平，没有突出奖项，课外活动有限，也没有清晰的申请叙事主线。常规申请方案很可能淹没在众多申请者中。',
-      case1_p2:     '吴博士精准锁定NASA Space Apps挑战赛，与Jason对数据科学的兴趣高度契合。Keystone协助招募组建团队，并全程指导——从项目立意、演示汇报到技术执行。最终成绩：全球10,000+支参赛队伍中跻身前10%。这段竞赛经历成为Jason申请的核心亮点，充分展现了他的主动性、团队协作能力和解决实际问题的能力。',
-      case1_p3:     '通过文书与面试辅导，Jason学会清晰表达自己从普通学生成长为竞赛领队的历程。这条成长弧线深深打动了UC Berkeley招生委员会。他成功被数据科学专业录取，2029届。',
+      case1_heading:'学生A \u00b7 UC Berkeley 数据科学 \u00b7 2029届', // TODO: Review Chinese translation
+      case1_p1:     '学生A在八年级时来到Keystone，当时GPA低于顶尖大学的平均水平，没有突出奖项，课外活动有限，也没有清晰的申请叙事主线。常规申请方案很可能淹没在众多申请者中。', // TODO: Review Chinese translation
+      case1_p2:     '吴博士精准锁定NASA Space Apps挑战赛，与该学生对数据科学的兴趣高度契合。Keystone协助招募组建团队，并全程指导：项目立意、演示汇报、技术执行。最终成绩：全球10,000+支参赛队伍中跻身前10%。这段竞赛经历成为申请的核心亮点，充分展现了主动性、团队协作能力和解决实际问题的能力。', // TODO: Review Chinese translation
+      case1_p3:     '通过文书与面试辅导，学生A学会清晰表达从普通学生成长为竞赛领队的历程。这条成长弧线深深打动了UC Berkeley招生委员会。该学生成功被数据科学专业录取，2029届。', // TODO: Review Chinese translation
+
+      case2_heading:'学生B \u00b7 Georgia Tech 计算机科学 \u00b7 2030届', // TODO: Review Chinese translation
+      case2_p1:     '学生B来到Keystone时课外活动寥寥，文书缺乏方向。没有令人信服的故事让招生官留下印象，该学生的申请档案与其他数千名申请者毫无区分度。', // TODO: Review Chinese translation
+      case2_p2:     '吴博士看到了潜力并立即行动。她锁定NASA Space Apps挑战赛作为战略切入点，帮助学生组建团队，并全程指导竞赛的每个阶段。除了竞赛之外，Keystone重新梳理了该学生的整个申请叙事，将零散的档案转化为一个关于成长、主动性和技术抱负的聚焦故事。', // TODO: Review Chinese translation
+      case2_p3:     '结果不言自明：被Georgia Tech计算机科学、UC Berkeley（文理学院）、华盛顿大学西雅图CS、威斯康星大学麦迪逊CS、UCSB计算机科学等多所顶尖院校录取。一份原本平淡无奇的申请，最终变成了一系列真正有说服力的成就，让顶尖项目无法忽视。', // TODO: Review Chinese translation
 
       faq_label:    '常见问题',
       faq_h2:       '家长最关心的<span class="gold">问题解答</span>',
@@ -638,8 +826,26 @@ const TRANSLATIONS = {
 
     services: {
       hero_label:   '服务项目',
-      hero_h1:      '全方位升学申请支持',
-      hero_sub:     '从早期规划到最终决策——我们陪伴孩子走好每一步。',
+      hero_h1:      '全方位学生支持', // TODO: Review Chinese translation
+      hero_sub:     '从第一次申请到职业起步，全程陪伴。', // TODO: Review Chinese translation
+
+      hub_label:    '我们的服务', // TODO: Review Chinese translation
+      hub_h2:       '五大<span class="gold">学生成功</span>路径', // TODO: Review Chinese translation
+      hub1_title:   '升学申请咨询', // TODO: Review Chinese translation
+      hub1_body:    '我们的核心服务：为9至12年级学生提供针对美国顶尖大学的个性化策略。文书、面试、课外活动和科研机会一站式服务。', // TODO: Review Chinese translation
+      hub1_link:    '了解更多 \u2192', // TODO: Review Chinese translation
+      hub2_title:   '转学策略与安置', // TODO: Review Chinese translation
+      hub2_body:    '社区大学转UC、低排名UC转顶尖UC、或任何学校转Top 10。为转学生提供完整的规划路线。', // TODO: Review Chinese translation
+      hub2_link:    '了解更多 \u2192',
+      hub3_title:   '本科四年成功规划', // TODO: Review Chinese translation
+      hub3_body:    '课程策略、专业选择、实习招聘准备和职业规划。从新生入学到毕业的动态路线图。', // TODO: Review Chinese translation
+      hub3_link:    '了解更多 \u2192',
+      hub4_title:   '美英双申', // TODO: Review Chinese translation
+      hub4_body:    '专为中国大陆高成就学生设计，同时申请美国和英国顶尖大学。', // TODO: Review Chinese translation
+      hub4_link:    '了解更多 \u2192',
+      hub5_title:   '生活技能与职业发展', // TODO: Review Chinese translation
+      hub5_body:    '效率工具、AI素养、时间管理和创业思维。录取之后真正让学生脱颖而出的实用技能。', // TODO: Review Chinese translation
+      hub5_link:    '了解更多 \u2192',
 
       intro_label:  '我们的方法',
       intro_h2:     '个性化、专家级的升学顾问服务',
@@ -696,7 +902,7 @@ const TRANSLATIONS = {
       pkg_sub:      '每位学生的情况各不相同。请预约免费咨询，我们将为您推荐最适合的方案。',
 
       pkg1_name:    '精选套餐',
-      pkg1_desc:    '为11-12年级学生提供针对关键申请环节的专项支持。',
+      pkg1_desc:    '专注于11-12年级学生的升学申请支持。', // TODO: Review Chinese translation
       pkg1_f1:      '文书辅导（个人陈述）',
       pkg1_f2:      '院校名单审核',
       pkg1_f3:      '申请策略咨询',
@@ -704,20 +910,20 @@ const TRANSLATIONS = {
       pkg1_f5:      '邮件答疑支持',
 
       pkg2_name:    '全程套餐',
-      pkg2_desc:    '从11-12年级全程支持到最终录取，适合大多数家庭的首选方案。',
+      pkg2_desc:    '升学申请、转学策略与本科规划全覆盖，适合大多数家庭。', // TODO: Review Chinese translation
       pkg2_badge:   '最受欢迎',
       pkg2_f1:      '包含精选套餐所有内容',
       pkg2_f2:      '所有院校补充文书',
-      pkg2_f3:      '活动列表策略',
-      pkg2_f4:      '暑期项目资源',
+      pkg2_f3:      '转学策略咨询', // TODO: Review Chinese translation
+      pkg2_f4:      '本科成功规划', // TODO: Review Chinese translation
       pkg2_f5:      '微信+优先响应支持',
       pkg2_f6:      '奖学金申请指导',
 
       pkg3_name:    '精英套餐',
-      pkg3_desc:    '从9-10年级开始的多年全程服务，为追求顶尖录取结果的家庭而设计。',
+      pkg3_desc:    '全部五项服务：升学、转学、本科规划、美英双申和生活技能。完整的Keystone体验。', // TODO: Review Chinese translation
       pkg3_f1:      '包含全程套餐所有内容',
-      pkg3_f2:      '多年学业规划',
-      pkg3_f3:      '竞赛与黑客马拉松资源',
+      pkg3_f2:      '美英双申服务', // TODO: Review Chinese translation
+      pkg3_f3:      '生活技能与职业发展', // TODO: Review Chinese translation
       pkg3_f4:      '科研项目名额对接',
       pkg3_f5:      '专属顾问一对一关系',
       pkg3_f6:      '全天候微信+视频支持',
@@ -762,6 +968,19 @@ const TRANSLATIONS = {
       team_l3:      '来自Stanford、Harvard、MIT、UC Berkeley和UCLA的优秀校友导师',
       team_l4:      'STEM、人文、商科、预医学和预法学专业方向的学术专家',
       team_p2:      '这一网络为Keystone学生带来无与伦比的内部优势——基于真实录取经验的指导，而非凭空猜测。',
+
+      mentor_label:  '近距离导师', // TODO: Review Chinese translation
+      mentor_h2:     'Aaron Chang',
+      mentor_title:  'UCLA 计算机科学, 2026届', // TODO: Review Chinese translation
+      mentor_p1:     'Aaron是Keystone方法的最佳证明。在吴博士从中学开始的指导下，他被UCLA计算机科学专业录取，并先后在亚马逊云科技(AWS)、TikTok和谷歌实习，随后接受了全职软件工程师的工作邀请。', // TODO: Review Chinese translation
+      mentor_p2:     '他在COLM 2025（全球顶级AI学术会议之一）发表了机器学习研究论文，创办了两家公司，并亲手搭建了您正在浏览的这个网站。他的经历证明了Keystone的影响远不止大学录取。', // TODO: Review Chinese translation
+      mentor_p3:     '如今Aaron作为近距离导师直接与Keystone学生合作，主导生活技能与职业发展项目。他带来了在顶尖大学学习、获得竞争激烈的实习机会以及在科技行业发展事业的第一手经验。对学生而言，他正是曾经站在他们同样位置的人，能够向他们展示未来的方向。', // TODO: Review Chinese translation
+      mentor_cred1:  'UCLA CS \'26',
+      mentor_cred2:  'AWS / TikTok / Google',
+      mentor_cred3:  'COLM 2025 研究', // TODO: Review Chinese translation
+      mentor_cred4:  '创业者', // TODO: Review Chinese translation
+      mentor_cred5:  '近距离导师', // TODO: Review Chinese translation
+      mentor_link:   '了解生活技能项目 \u2192', // TODO: Review Chinese translation
 
       timeline_label:'我们的历程',
       timeline_h2:  '铸就<span class="gold">学生成功</span>的传承',
@@ -854,6 +1073,10 @@ const TRANSLATIONS = {
       s9_field: '环境科学',
       s9_quote: '"作为初到美国体系的家庭，我们完全不知所措。Keystone给了我们清晰的路线图，全程陪伴我们走过每一步。"',
       s9_meta:  '2023届学生家长 · ★★★★★',
+
+      sb_field: '计算机科学', // TODO: Review Chinese translation
+      sb_quote: '"我们的女儿没有方向，课外活动也很少。吴博士从零开始为她打造整个申请档案，包括NASA Space Apps竞赛。她被Georgia Tech CS、UC Berkeley、华盛顿大学西雅图CS等多所学校录取。蜕变令人难以置信。"', // TODO: Review Chinese translation
+      sb_meta:  '2030届学生家长 · ★★★★★', // TODO: Review Chinese translation
 
       cta_h2:       '您的孩子可以成为下一个成功故事',
       cta_p:        '预约免费咨询，让我们谈谈一切可能。',
@@ -970,14 +1193,122 @@ const TRANSLATIONS = {
       location:       '总部：美国加州洛杉矶 · 服务全球家庭 · 微信全天候支持',
     },
 
+    /* ── NEW SERVICE PAGES (ZH) ──────────────────────────── */
+    transfer: {
+      hero_label:   '服务项目', // TODO: Review Chinese translation
+      hero_h1:      '转学策略与安置', // TODO: Review Chinese translation
+      hero_sub:     '社区大学转UC。低排名UC转顶尖UC。任何学校转Top 10 / Top 20。', // TODO: Review Chinese translation
+      intro_p1:     '对本科录取结果感到失望？转学仍然完全有可能。', // TODO: Review Chinese translation
+      intro_p2:     '但如果对转学流程没有清晰的了解，大多数家庭最终会在一年后重复同样的错误。很少有人告诉你：IGETC资格、TAG申请窗口和专业衔接课程要求，往往在社区大学的第一个学期就已锁定，远早于大多数家庭开始认真考虑转学策略的时间。', // TODO: Review Chinese translation
+      intro_p3:     'Keystone拥有17年以上美国大学申请领域的经验。我们见过太多勤奋的学生被一个表面看起来简单、实际却充满隐性规则的流程打了个措手不及。转学录取并不是新生录取的简化版本，它在规则、时间线和评估标准上完全不同。把转学当作普通申请来对待的家庭，几乎总要付出代价。', // TODO: Review Chinese translation
+      intro_p4:     '吴博士亲自参与每一位转学生的规划，制定12至18个月的完整路线图，不留任何盲区。', // TODO: Review Chinese translation
+      list_label:   '我们为您做什么', // TODO: Review Chinese translation
+      list1:        '根据您的真实录取概率匹配目标学校和专业，而非一厢情愿', // TODO: Review Chinese translation
+      list2:        '将您的GPA与目标专业和校区的实际转学录取数据进行对标', // TODO: Review Chinese translation
+      list3:        '制定满足衔接课程要求同时保留灵活性的选课计划', // TODO: Review Chinese translation
+      list4:        '评估TAG/TAP资格，如符合条件立即制定行动计划', // TODO: Review Chinese translation
+      list5:        '辅导您的UC个人陈述(PIQ)，真实反映当下的您，而非高中时期的您', // TODO: Review Chinese translation
+      list6:        '代您管理每一个截止日期，确保您不会因悄然关闭的窗口而措手不及', // TODO: Review Chinese translation
+      who_label:    '适合人群', // TODO: Review Chinese translation
+      who_p:        '目标UCLA、UC Berkeley或UCSD的社区大学学生。在UC Santa Cruz、UC Riverside或UC Merced就读、希望转入顶尖校区的学生。以及任何院校中希望冲击Top 10或Top 20项目的本科生。', // TODO: Review Chinese translation
+      cta_h2:       '转学窗口比大多数家庭想象的更窄', // TODO: Review Chinese translation
+      cta_p:        '预约吴博士的免费咨询，了解您目前的真实定位。', // TODO: Review Chinese translation
+      cta_btn:      '预约免费咨询', // TODO: Review Chinese translation
+    },
+
+    undergrad: {
+      hero_label:   '服务项目', // TODO: Review Chinese translation
+      hero_h1:      '本科四年成功规划', // TODO: Review Chinese translation
+      hero_sub:     '课程策略。专业决策。职业准备。AI时代优势。', // TODO: Review Chinese translation
+      intro_p1:     '进入梦想大学只是开始。', // TODO: Review Chinese translation
+      intro_p2:     '大学四年里发生的一切决定了所有：能否拿到实习offer，能否进入目标公司，能否被顶尖硕士或博士项目录取，能否成为与AI协作而非被AI取代的专业人士，还是带着一张文凭却不知下一步该做什么走过毕业典礼。', // TODO: Review Chinese translation
+      intro_p3:     '大学毕业后真正成功的学生并不比其他人更聪明。他们只是更早开始了规划。', // TODO: Review Chinese translation
+      intro_p4:     '顶尖科技公司和咨询公司的招聘周期在你踏入校园之前就已开启。最有价值的科研机会在你还在适应宿舍生活时就已满员。大多数学生直到大三甚至大四才发现这一点，而此时最好的机会已经悄悄关闭了。', // TODO: Review Chinese translation
+      intro_p5:     'Keystone的本科规划服务基于吴博士20多年的实战辅导经验。我们为每位学生提供以职业和科研为导向、拥抱AI的动态路线图，从新生入学前开始，一直延伸到毕业。', // TODO: Review Chinese translation
+      list_label:   '服务内容', // TODO: Review Chinese translation
+      list1:        '<strong>课程与专业规划</strong>: 与您的职业目标和研究生院志向对齐的四年学业计划，包括明智的辅修选择和GPA保护策略', // TODO: Review Chinese translation
+      list2:        '<strong>专业调整指导</strong>: 数据驱动的支持，帮助您判断何时以及如何转专业、修双学位或添加战略性辅修，不浪费时间、不失去势头', // TODO: Review Chinese translation
+      list3:        '<strong>研究生院规划</strong>: 博士vs硕士决策框架、科研经历积累、导师网络对接，以及错开申请时间，确保您永远不会在最后一刻手忙脚乱', // TODO: Review Chinese translation
+      list4:        '<strong>职业与实习路线图</strong>: 招聘时间线、简历和LinkedIn优化、职业网络构建，以及求职工具实操能力', // TODO: Review Chinese translation
+      list5:        '<strong>AI时代竞争力</strong>: 在专业知识基础上叠加AI协作技能的个性化路线图，包括项目作品集开发和竞赛策略', // TODO: Review Chinese translation
+      list6:        '<strong>5C核心能力发展</strong>: 好奇心、勇气、创造力、同情心和沟通力：AI永远无法复制的五种人类品质，融入每个学期的行动计划', // TODO: Review Chinese translation
+      list7:        '<strong>热情与目标对齐</strong>: 帮助学生找到热爱、擅长和世界需要之间的交汇点，让选择由方向驱动，而非随波逐流', // TODO: Review Chinese translation
+      list8:        '<strong>长期职业策略</strong>: 从第一份实习到第一份全职offer，以及伴随学生每个阶段的个人品牌', // TODO: Review Chinese translation
+      edge_label:   'Keystone的优势', // TODO: Review Chinese translation
+      edge_p:       '我们的顾问网络包括来自Google、Amazon、TikTok和NASA的行业专业人士，让我们对本科阶段真正重要的事情有着远超普通学业顾问的实战洞察。', // TODO: Review Chinese translation
+      who_label:    '适合人群', // TODO: Review Chinese translation
+      who_p:        '希望从入学第一天就赢在起跑线的新生。感觉落后或缺乏方向的在读本科生。在就业与读研之间权衡的学生。以及希望获得远超校园顾问所能提供的结构化、负责任的规划体系的家庭。', // TODO: Review Chinese translation
+      cta_h2:       '大多数学生被动应对。Keystone学生主动规划。', // TODO: Review Chinese translation
+      cta_p:        '预约免费咨询，看看您孩子的四年路线图是什么样的。', // TODO: Review Chinese translation
+      cta_btn:      '预约免费咨询', // TODO: Review Chinese translation
+    },
+
+    dualtrack: {
+      hero_label:   '服务项目', // TODO: Review Chinese translation
+      hero_h1:      '美英双申', // TODO: Review Chinese translation
+      hero_sub:     '面向中国大陆高成就学生，同时申请两大全球最顶尖的教育体系。', // TODO: Review Chinese translation
+      intro_p1:     '美国和英国的大学录取体系不仅在地理上相隔，在评估理念上也截然相反。', // TODO: Review Chinese translation
+      intro_p2:     '美国Common App问的是：你是一个什么样的人？英国UCAS个人陈述问的是：你为什么在学术上适合这个专业？', // TODO: Review Chinese translation
+      intro_p3:     '用同一篇文书提交给两边，几乎可以肯定两边都会被拒。', // TODO: Review Chinese translation
+      intro_p4:     '中国大陆的大多数学生最终面临两个问题之一：顾问精通美国体系但对英国录取只有表面了解，或者英国留学机构在美国市场缺乏竞争力。能真正驾驭两套体系并将其整合为一个连贯策略的顾问少之又少。', // TODO: Review Chinese translation
+      intro_p5:     'Keystone总部位于美国，同时拥有专门为中国学生打造的深度英国录取专业能力。吴博士和她的顾问团队同步运作两条申请线：一个统一的学生故事，用两种完全不同的声音，讲给两个完全不同的受众。', // TODO: Review Chinese translation
+      list_label:   '我们为您做什么', // TODO: Review Chinese translation
+      list1:        '<strong>双轨选校策略</strong>: 美国目标覆盖常春藤、顶尖文理学院和Top 20研究型大学；英国目标覆盖牛津、剑桥和Russell Group项目，按您的学科领域量身定制', // TODO: Review Chinese translation
+      list2:        '<strong>协调时间线管理</strong>: 牛津/剑桥截止日期10月15日，其他英国院校1月31日，与美国EA/ED/RD周期并行且无冲突', // TODO: Review Chinese translation
+      list3:        '<strong>完整美国申请套件</strong>: Common App个人陈述、学校专属补充文书（Why This School, Why This Major），以及活动列表优化', // TODO: Review Chinese translation
+      list4:        '<strong>英国UCAS个人陈述</strong>: 学术严谨、学科聚焦，精确校准英国录取导师实际阅读和评估的方式', // TODO: Review Chinese translation
+      list5:        '<strong>牛津与剑桥面试准备</strong>: 英国录取面试考察的是学科深度推理，而非个性；我们为学生准备他们将面对的确切形式', // TODO: Review Chinese translation
+      list6:        '<strong>录取决策策略</strong>: 当两边的录取通知同时到达，我们帮助家庭从项目质量、职业前景、经济考量和长期匹配度等维度清晰评估', // TODO: Review Chinese translation
+      list7:        '<strong>全程双语支持</strong>: 吴博士中英文流利沟通，支持微信联系，时区友好的安排专为中国大陆家庭设计', // TODO: Review Chinese translation
+      who_label:    '适合人群', // TODO: Review Chinese translation
+      who_p:        '中国大陆拥有强烈学术身份的高成就学生，真正希望解锁两国精英项目，而非将英国作为保底，而是认真追求两条申请线以最大化整体录取结果。', // TODO: Review Chinese translation
+      cta_h2:       '牛津剑桥10月15日截止日期比家长预期来得更快', // TODO: Review Chinese translation
+      cta_p:        '立即添加吴博士微信(janewu2237)，开始制定您的双申策略。', // TODO: Review Chinese translation
+      cta_btn:      '预约免费咨询', // TODO: Review Chinese translation
+    },
+
+    lifeskills: {
+      hero_label:   '服务项目', // TODO: Review Chinese translation
+      hero_h1:      '生活技能与职业发展', // TODO: Review Chinese translation
+      hero_sub:     '让您的孩子学会自我管理。我们用真实的系统培养真正的习惯。', // TODO: Review Chinese translation
+      intro_label:  '超越录取', // TODO: Review Chinese translation
+      intro_h2:     '录取<span class="gold">之后</span>真正重要的技能', // TODO: Review Chinese translation
+      intro_p1:     '进入一所好大学是里程碑，不是终点线。在大学及以后真正蓬勃发展的学生，是那些知道如何管理时间、专业沟通、批判性地看待技术并对自己的成长负责的人。', // TODO: Review Chinese translation
+      intro_p2:     'Keystone的生活技能项目专为有才华但需要系统方法的学生设计。由Aaron Chang主导，他是UCLA计算机科学毕业生，曾在AWS、TikTok和Google实习，这个项目提供学生每天都会实际使用的实践型教练辅导。', // TODO: Review Chinese translation
+      mentor_label: '您的导师', // TODO: Review Chinese translation
+      mentor_h2:    'Aaron Chang',
+      mentor_title: 'UCLA 计算机科学, 2026届', // TODO: Review Chinese translation
+      mentor_p1:    'Aaron通过艰难的方式学到了这些技能：在全美最具竞争力的计算机科学项目中摸索，在全球顶尖科技公司的招聘周期中历练，从零开始创办两家公司。现在他教给您的孩子，让他们不必独自摸索。', // TODO: Review Chinese translation
+      mentor_p2:    '作为近距离导师，Aaron能够以父母和传统顾问无法做到的方式与学生建立联系。他曾身处学生们现在的位置，他知道到达他们想去的地方需要什么。', // TODO: Review Chinese translation
+      skill1_title: '效率工具系统', // TODO: Review Chinese translation
+      skill1_body:  'Google Calendar、Notion、任务管理工作流。我们不只推荐工具，还一起设置并培养持久的习惯。', // TODO: Review Chinese translation
+      skill2_title: 'AI素养', // TODO: Review Chinese translation
+      skill2_body:  '如何负责任且高效地使用Claude、ChatGPT和其他AI工具。何时依赖AI、何时独立思考，以及如何保持领先。', // TODO: Review Chinese translation
+      skill3_title: '时间管理与自律', // TODO: Review Chinese translation
+      skill3_body:  '日程安排、截止日期管理、优先级排序和自我问责。区分普通学生和优秀学生的基础习惯。', // TODO: Review Chinese translation
+      skill4_title: '创业思维', // TODO: Review Chinese translation
+      skill4_body:  '商业基础、主动性、创造性问题解决和回馈家庭。无论学生未来创业还是加入公司都受益的技能。', // TODO: Review Chinese translation
+      skill5_title: '沟通与职业形象', // TODO: Review Chinese translation
+      skill5_body:  '邮件礼仪、社交网络、演讲展示和个人品牌。在各行各业打开机会大门的软技能。', // TODO: Review Chinese translation
+      audience_label: '适合人群', // TODO: Review Chinese translation
+      audience_h2:   '为准备好<span class="gold">更进一步</span>的学生打造', // TODO: Review Chinese translation
+      audience1_title:'成绩优异但缺乏方向的学生', // TODO: Review Chinese translation
+      audience1_body: '您的孩子门门功课拿A，但被问到毕业后想做什么时却无从回答。他们在课堂上表现出色，但从未管理过项目、写过专业邮件，也没有在作业之外做出过任何成果。这个项目将学术能力转化为真实世界的竞争力：生产力系统、职业沟通和自我管理技能，让学生从"仅仅通过"变为"真正出色"。', // TODO: Review Chinese translation
+      audience2_title:'单一特长但需要全面发展的学生', // TODO: Review Chinese translation
+      audience2_body: '您的孩子在某一领域非常出色，但在其他方面有所欠缺。也许他们会编程但在会议中无法有效表达，或者文笔出色但毫无时间管理概念。我们帮助学生弥补制约他们发展的短板：AI素养、创业思维、社交网络和日常生活技能。这些是大学和雇主都期望具备但没有人教的能力。', // TODO: Review Chinese translation
+      cta_h2:       '今天就开始培养实用技能', // TODO: Review Chinese translation
+      cta_p:        '预约免费咨询，了解Aaron和Keystone团队如何为您的孩子准备课堂之外的生活。', // TODO: Review Chinese translation
+      cta_btn:      '预约免费咨询', // TODO: Review Chinese translation
+    },
+
     footer: {
       tagline:          '自2008年起，帮助中国及全球各地学生进入梦想中的美国大学。100%录取成功率。中英双语服务。',
       services_heading: '服务项目',
-      s1: '院校规划',
-      s2: '申请策略',
-      s3: '文书辅导',
-      s4: '面试准备',
-      s5: '暑期项目',
+      s1: '升学咨询', // TODO: Review Chinese translation
+      s2: '转学策略', // TODO: Review Chinese translation
+      s3: '本科规划', // TODO: Review Chinese translation
+      s4: '美英双申', // TODO: Review Chinese translation
+      s5: '生活技能', // TODO: Review Chinese translation
       contact_heading: '联系方式',
       copyright:    '© 2025 Keystone Consulting LLC. 版权所有。',
       location:     '总部：加州洛杉矶 · 服务全球家庭',

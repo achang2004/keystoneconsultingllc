@@ -18,7 +18,16 @@ function buildNav() {
     <a href="${BASE}index.html" class="nav-logo"><img src="${BASE}assets/logos/keystone.svg" alt="Keystone Consulting LLC" class="nav-logo-img"></a>
     <ul class="nav-links" role="list">
       <li><a href="${BASE}index.html"                           data-i18n="nav.home">Home</a></li>
-      <li><a href="${BASE}pages/services.html"                  data-i18n="nav.services">Services</a></li>
+      <li class="nav-dropdown">
+        <a href="${BASE}pages/services.html"                    data-i18n="nav.services">Services</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="${BASE}pages/services.html"              data-i18n="nav.svc_admissions">College Admissions</a></li>
+          <li><a href="${BASE}pages/transfer.html"              data-i18n="nav.svc_transfer">Transfer Strategy</a></li>
+          <li><a href="${BASE}pages/undergrad-planning.html"    data-i18n="nav.svc_undergrad">Undergrad Planning</a></li>
+          <li><a href="${BASE}pages/dual-track.html"            data-i18n="nav.svc_dualtrack">US + UK Dual-Track</a></li>
+          <li><a href="${BASE}pages/life-skills.html"           data-i18n="nav.svc_lifeskills">Life Skills</a></li>
+        </ul>
+      </li>
       <li><a href="${BASE}pages/about.html"                     data-i18n="nav.about">About</a></li>
       <li><a href="${BASE}pages/success-stories.html"           data-i18n="nav.success">Success Stories</a></li>
       <li><a href="${BASE}pages/contact.html"                   data-i18n="nav.contact">Contact</a></li>
@@ -37,7 +46,12 @@ function buildNav() {
 <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
   <ul>
     <li><a href="${BASE}index.html"                        data-i18n="nav.home">Home</a></li>
-    <li><a href="${BASE}pages/services.html"               data-i18n="nav.services">Services</a></li>
+    <li class="mobile-services-header"><span data-i18n="nav.services">Services</span></li>
+    <li class="mobile-services-sub"><a href="${BASE}pages/services.html"              data-i18n="nav.svc_admissions">College Admissions</a></li>
+    <li class="mobile-services-sub"><a href="${BASE}pages/transfer.html"              data-i18n="nav.svc_transfer">Transfer Strategy</a></li>
+    <li class="mobile-services-sub"><a href="${BASE}pages/undergrad-planning.html"    data-i18n="nav.svc_undergrad">Undergrad Planning</a></li>
+    <li class="mobile-services-sub"><a href="${BASE}pages/dual-track.html"            data-i18n="nav.svc_dualtrack">US + UK Dual-Track</a></li>
+    <li class="mobile-services-sub"><a href="${BASE}pages/life-skills.html"           data-i18n="nav.svc_lifeskills">Life Skills</a></li>
     <li><a href="${BASE}pages/about.html"                  data-i18n="nav.about">About</a></li>
     <li><a href="${BASE}pages/success-stories.html"        data-i18n="nav.success">Success Stories</a></li>
     <li><a href="${BASE}pages/contact.html"                data-i18n="nav.contact">Contact</a></li>
@@ -64,11 +78,11 @@ function buildFooter() {
       <div class="footer-col">
         <h4 data-i18n="footer.services_heading">Services</h4>
         <ul>
-          <li><a href="${BASE}pages/services.html" data-i18n="footer.s1">University Planning</a></li>
-          <li><a href="${BASE}pages/services.html" data-i18n="footer.s2">Application Strategy</a></li>
-          <li><a href="${BASE}pages/services.html" data-i18n="footer.s3">Essay Coaching</a></li>
-          <li><a href="${BASE}pages/services.html" data-i18n="footer.s4">Interview Prep</a></li>
-          <li><a href="${BASE}pages/services.html" data-i18n="footer.s5">Summer Programs</a></li>
+          <li><a href="${BASE}pages/services.html"              data-i18n="footer.s1">College Admissions</a></li>
+          <li><a href="${BASE}pages/transfer.html"              data-i18n="footer.s2">Transfer Strategy</a></li>
+          <li><a href="${BASE}pages/undergrad-planning.html"    data-i18n="footer.s3">Undergrad Planning</a></li>
+          <li><a href="${BASE}pages/dual-track.html"            data-i18n="footer.s4">US + UK Dual-Track</a></li>
+          <li><a href="${BASE}pages/life-skills.html"           data-i18n="footer.s5">Life Skills</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -210,7 +224,7 @@ function initStoryFilter() {
       btn.classList.add('active');
       const filter = btn.getAttribute('data-filter');
       storyCards.forEach(card => {
-        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+        if (filter === 'all' || (card.getAttribute('data-category') || '').split(' ').includes(filter)) {
           card.style.display = '';
         } else {
           card.style.display = 'none';
