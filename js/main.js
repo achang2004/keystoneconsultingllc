@@ -303,7 +303,7 @@ function startMarquee(track, speed) {
 
 function initMarquee() {
   document.querySelectorAll('.marquee-track').forEach(track => {
-    const speed = parseFloat(track.dataset.speed) || 0.5;
+    const speed = parseFloat(track.dataset.speed) || (window.innerWidth <= 768 ? 0.5 : 0.25);
     startMarquee(track, speed);
   });
 }
